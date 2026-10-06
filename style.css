@@ -1,0 +1,51 @@
+:root {
+  --bg: #f6f1e7;
+  --ink: #1d2a25;
+  --soft: #5b6a63;
+  --line: #ddd3c2;
+  --accent: #c8532c;
+  --card: #fffaf1;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0e1c17;
+    --ink: #efe7d8;
+    --soft: #a9b5ae;
+    --line: #2b3b35;
+    --accent: #f4875f;
+    --card: #14261f;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Hiragino Sans", "Apple SD Gothic Neo", "PingFang TC", "Noto Sans CJK JP", sans-serif;
+}
+main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+header.site { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; margin-bottom: 28px; }
+header.site a.brand { font-size: 22px; font-weight: 700; color: var(--ink); text-decoration: none; }
+nav a { color: var(--soft); margin-left: 14px; font-size: 15px; }
+nav a:first-child { margin-left: 0; }
+h1 { font-size: 30px; line-height: 1.2; margin: 0 0 6px; }
+h2 { font-size: 20px; margin: 32px 0 8px; }
+p.meta { color: var(--soft); font-size: 14px; margin-top: 0; }
+a { color: var(--accent); }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; margin: 18px 0; }
+table { width: 100%; border-collapse: collapse; font-size: 15px; }
+th, td { text-align: left; vertical-align: top; padding: 8px 6px; border-bottom: 1px solid var(--line); }
+footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--soft); font-size: 14px; }
+ul { padding-left: 22px; }
+nav a[aria-current] { color: var(--ink); text-decoration: none; }
+nav.lang { display: flex; flex-wrap: wrap; gap: 4px 14px; margin: -16px 0 24px; font-size: 14px; }
+nav.lang a { margin-left: 0; color: var(--soft); }
+nav.lang a[aria-current] { color: var(--ink); font-weight: 600; text-decoration: none; }
+th, td { overflow-wrap: anywhere; }
+li table { margin: 8px 0; font-size: 14px; }
+mark.todo { background: #ffe08a; color: #3a2a00; padding: 0 3px; border-radius: 3px; }
+@media (max-width: 600px) {
+  table { display: block; overflow-x: auto; }
+  nav a { margin-left: 10px; }
+}

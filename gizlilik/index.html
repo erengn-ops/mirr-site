@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Miyav Gizlilik</title>
+<meta name="description" content="Miyav gizlilik politikası ve KVKK aydınlatma metni.">
+<link rel="canonical" href="https://erengn-ops.github.io/mirr-site/gizlilik/">
+<link rel="alternate" hreflang="tr" href="https://erengn-ops.github.io/mirr-site/gizlilik/">
+<link rel="alternate" hreflang="en" href="https://erengn-ops.github.io/mirr-site/en/privacy/">
+<link rel="alternate" hreflang="ja" href="https://erengn-ops.github.io/mirr-site/ja/privacy/">
+<link rel="alternate" hreflang="ko" href="https://erengn-ops.github.io/mirr-site/ko/privacy/">
+<link rel="alternate" hreflang="zh-Hant" href="https://erengn-ops.github.io/mirr-site/zh-hant/privacy/">
+<link rel="alternate" hreflang="x-default" href="https://erengn-ops.github.io/mirr-site/en/privacy/">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<main>
+  <header class="site">
+    <a class="brand" href="../">Miyav</a>
+    <nav><a href="./" aria-current="page">Gizlilik</a><a href="../kosullar/">Koşullar</a><a href="../destek/">Destek</a></nav>
+  </header>
+  <nav class="lang" aria-label="Dil"><a href="./" hreflang="tr" lang="tr" aria-current="true">Türkçe</a> <a href="../en/privacy/" hreflang="en" lang="en">English</a> <a href="../ja/privacy/" hreflang="ja" lang="ja">日本語</a> <a href="../ko/privacy/" hreflang="ko" lang="ko">한국어</a> <a href="../zh-hant/privacy/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></nav>
+  <h1>Gizlilik Politikası</h1>
+  <p class="meta">Son güncelleme: 6 Ekim 2026 · KVKK aydınlatma metni dahildir · Türkiye dışındaki kullanıcılar için <a href="../en/privacy/">İngilizce sürüm</a> geçerlidir.</p>
+
+  <div class="card">
+    <strong>Kısaca:</strong> Hesap yok, reklam yok, takip yok. Kedi kayıtların, sağlık defterin ve ses kayıtların yalnızca telefonunda tutulur.
+    Telefondan veri yalnızca canlı kedini oluştururken çıkar: seçtiğin <strong>1–4 kedi fotoğrafı</strong>, <strong>kedinin adı</strong>,
+    kedin hakkında girmeyi seçtiğin bilgiler (göz rengi, yaş, cins gibi), satın almanı doğrulayan Apple imzalı işlem bilgisi ve bildirimlere
+    izin verdiysen bir <strong>bildirim jetonu</strong>. Fotoğraflar sunucumuzda ve ABD'deki iki sağlayıcıda (Anthropic, Higgsfield) işlenir.
+    Sunucumuz iş kaydını en fazla <strong>24 saat</strong> tutar.
+  </div>
+
+  <h2>1. Telefonunda kalan veriler</h2>
+  <ul>
+    <li><strong>Mikrofon ve ses:</strong> Kedi çevirmeni sesi Apple'ın cihaz üstü ses sınıflandırıcısıyla telefonunda analiz eder. Ses hiçbir sunucuya gönderilmez.</li>
+    <li><strong>Kedi profilleri, sağlık kayıtları, aşı ve ilaç takibi, kilo, anılar, hatırlatıcılar, çeviri geçmişi:</strong> telefonundaki uygulama veritabanında saklanır. Bize gönderilmez.</li>
+    <li><strong>Sağlık ve davranış soruları:</strong> telefonundaki Apple modeliyle ya da uygulamanın içindeki yerleşik rehberle yanıtlanır. Sorularını almayız.</li>
+    <li><strong>Hatırlatıcılar:</strong> telefonunda planlanan yerel bildirimlerdir.</li>
+  </ul>
+
+  <h2>2. Telefondan çıkan veriler: canlı kedi üretimi</h2>
+  <p>"Kendi kedini canlandır" dediğinde uygulama önce neyin kime gittiğini anlatan bir onay ekranı gösterir. Yalnızca onay verirsen aşağıdakiler şifreli bağlantıyla (HTTPS) gönderilir. Fotoğraflar gönderilmeden önce telefonunda yeniden kodlanır; konum ve kamera bilgisi (EXIF) bu sırada silinir.</p>
+  <table>
+    <tr><th>Veri</th><th>Kim alır, ne için</th><th>Ne kadar</th></tr>
+    <tr><td>Kedinin 1–4 fotoğrafı</td><td><strong>Miyav sunucusu</strong> işi yönetir. <strong>Anthropic</strong> (Claude, ABD) fotoğrafta tek bir kedi olduğunu kontrol eder, görünüşünü (tüy rengi, desen, işaretler, göz rengi) tanımlar ve üretilen görselin kedine benzeyip benzemediğini denetler. <strong>Higgsfield</strong> (ABD) stüdyo görselini ve animasyon videolarını yapay zekâ ile üretir.</td><td>Sunucumuz fotoğrafları yalnızca iş sürerken bellekte tutar, diske yazmaz. Üretilen kliplerin kontrolü sırasında oluşan geçici dosyalar her kontrol biter bitmez silinir; her durumda işine ait hiçbir şey, kedin üretildikten ya da iş başarısız olduktan sonra 7 günden uzun sunucumuzda kalmaz. Sağlayıcılar: aşağıda.</td></tr>
+    <tr><td>Kedinin adı</td><td>Yalnızca sunucumuz: ilerleme mesajları ve "kedin hazır" bildirimi.</td><td>İş kaydı, en geç 24 saatte silinir.</td></tr>
+    <tr><td>Girmeyi seçtiğin bilgiler: göz rengi, yaş, boy, tüy uzunluğu, cins, kilo (hepsi isteğe bağlı)</td><td>Sunucumuz ve Anthropic, fotoğraflarla karşılaştırmak için; Higgsfield, kedinin görünüş tarifinin parçası olarak.</td><td>İş kaydı, en geç 24 saatte silinir.</td></tr>
+    <tr><td>Bildirim jetonu (yalnızca bildirimlere izin verdiysen)</td><td>Sunucumuz, Apple Anında Bildirim Servisi üzerinden tek bir "kedin hazır" (ya da "bir aksilik oldu") bildirimi göndermek için.</td><td>İş kaydı, en geç 24 saatte silinir; Apple geçersiz derse daha önce.</td></tr>
+    <tr><td>Apple imzalı işlem bilgisi</td><td>Sunucumuz, tek seferlik satın almanın ("Kedini canlandır", "Ek kedi" ya da "Kedim büyüdü") geçerli olduğunu doğrulamak ve satın alma başına sınırı uygulamak için (bölüm 3).</td><td>Yalnızca ilk işlem numarasının tek yönlü özeti (hash) ve bir sayaç tutulur. Son kullanımdan 12 ay sonra kendiliğinden silinir.</td></tr>
+    <tr><td>Üretilen görseller ve videolar</td><td>Higgsfield'da üretilir, telefonuna indirilir; arka planı telefonunda temizlenir ve orada saklanır.</td><td>İş kaydındaki bağlantılar 24 saat içinde silinir; Higgsfield'daki kopyalar onun koşullarına tabidir.</td></tr>
+    <tr><td>Bağlantı verisi (IP adresi, zaman, istek)</td><td>Hizmetimizi barındıran sunucu, güvenlik ve işletim için.</td><td>Sunucumuz netcup GmbH tarafından Almanya'da (Nürnberg, AB) barındırılır. Sunucu logları 30 gün tutulur, sonra kendiliğinden silinir.</td></tr>
+  </table>
+  <p><strong>Telefonunda tutulan fotoğraflar:</strong> Canlı kedin için seçtiğin fotoğraflar, kedinin tüm hareketleri telefonuna yüklenene kadar yalnızca telefonunda saklanır, ardından telefondan silinir. "Tüm verilerimi sil" bunları her an siler.</p>
+  <p><strong>Sağlayıcılar:</strong> <strong>Anthropic</strong> (Anthropic, PBC, ABD; model Claude Haiku) fotoğrafları ve bilgileri yalnızca kedini kontrol edip tarif etmek için alır. <a href="https://www.anthropic.com/legal/commercial-terms">Ticari hizmet koşulları</a> gereği Anthropic, hizmetlerine gelen müşteri içeriğiyle model eğitemez; <a href="https://www.anthropic.com/legal/privacy">gizlilik politikasında</a> anlatıldığı gibi güvenlik ve kötüye kullanım denetimi için verileri sınırlı bir süre saklayabilir. <strong>Higgsfield</strong> (Higgsfield Inc., ABD) stüdyo görselini ve videoları iş ortaklarının modelleriyle üretir (bugün görsel için Alibaba'nın Qwen-Image, videolar için Kuaishou'nun Kling modeli). Higgsfield fotoğrafları, tarifi ve üretilen içeriği kendi koşulları ve saklama kurallarına göre işler: <a href="https://higgsfield.ai/privacy-policy">gizlilik politikası</a>, girdileri ve çıktıları yapay zekâ modellerini eğitmek ve geliştirmek için kullanabileceğini, silinen içeriğin 30 gün aktif sunucularında, sonrasında yedeklerde kalabileceğini söyler. Verileri satmıyor, reklam ya da profil çıkarma için kullanmıyoruz.</p>
+  <p><strong>Lütfen fotoğraflarda insan, yüz, belge ya da kişisel bilgi bulunmasın.</strong> Uygulama yalnızca kedi fotoğrafı ister.</p>
+  <p>Onay vermezsen hiçbir şey gönderilmez ve canlı kedi üretilmez; uygulamanın geri kalanını ve hazır kedileri kullanabilirsin. Onayını Ayarlar → Gizlilik → "Onayı geri al" ile geri alabilirsin; bu, sonraki gönderimleri durdurur.</p>
+
+  <h2>3. Satın almalar</h2>
+  <p>Ödemeler tamamen Apple tarafından işlenir. Kart bilgilerini, adını ya da Apple hesabını görmeyiz. Uygulama satın alımlarını Apple'ın StoreKit sisteminden telefonunda okur. Canlı kedi üretilirken Apple'ın imzaladığı işlem bilgisi (işlem numarası, ürün, ortam) fotoğraflarla birlikte sunucumuza gönderilir; satın almanın geçerli olduğunu doğrulamak ve satın alma başına üretimi sınırlamak (1 kedi + 2 yeniden deneme) için kullanılır. İade edilen bir satın alma için yeni kedi üretilmez. <strong>Miyav Plus</strong> yalnızca telefonunda kontrol edilir; onunla ilgili hiçbir bilgi bize gönderilmez.</p>
+
+  <h2>4. Bize yazdığında</h2>
+  <p>Bize e-posta gönderirsen e-posta adresini ve yazdıklarını alırız. Bunları yalnızca sana yanıt vermek için kullanır, bunun için gereken süre boyunca saklarız.</p>
+
+  <h2>5. Toplamadıklarımız</h2>
+  <p>Hesap, ad, telefon numarası, konum, rehber, reklam kimliği, kullanım analitiği, çökme raporu SDK'sı, reklam SDK'sı: hiçbiri yok. Uygulama seni başka şirketlerin uygulama ve sitelerinde takip etmez; kişisel veri satmaz ya da paylaşmaz.</p>
+
+  <h2>6. Silme ve hakların</h2>
+  <ul>
+    <li><strong>Telefondaki veriler:</strong> Ayarlar → Veriler → "Tüm verilerimi sil" kedi profillerini, sağlık kayıtlarını, anıları, hatırlatıcıları, çeviri geçmişini, canlandırılan kedileri, hareketler yüklenene kadar tutulan fotoğrafları ve gönderim onayını siler. Uygulamayı silmek de telefondaki her şeyi siler.</li>
+    <li><strong>Sunucudaki iş kaydı:</strong> 24 saat içinde kendiliğinden silinir. Hesap olmadığı için seni tanımlayan bir kayıt tutmayız; daha erken silinmesini istersen yükleme zamanını yazman yeterli.</li>
+    <li>KVKK'nın 11. maddesindeki hakların (bilgi talep etme, düzeltme, silme, itiraz, yurt dışına aktarılan veriler ve alıcılar hakkında bilgi) için <a href="mailto:erengn@gmail.com">erengn@gmail.com</a> adresine yazabilirsin. Kişisel Verileri Koruma Kurulu'na şikâyet hakkın saklıdır.</li>
+  </ul>
+
+  <h2>7. KVKK aydınlatma</h2>
+  <p><strong>Veri sorumlusu:</strong> Batuhan Eren Engin (App Store'da satıcı olarak görünen geliştirici), e-posta: <a href="mailto:erengn@gmail.com">erengn@gmail.com</a>.
+  <strong>İşlenen veri:</strong> seçtiğin kedi fotoğrafları, kedinin adı, isteğe bağlı kedi bilgileri, bildirim jetonu, Apple imzalı işlem bilgisi, bağlantı verisi ve bize yazarsan e-posta yazışması.
+  <strong>Amaç ve hukuki sebep:</strong> talep ettiğin hizmetin (canlı kedi üretimi ve "hazır" bildirimi) sunulması, sözleşmenin ifası (KVKK m.5/2-c); satın almanın doğrulanması ve kötüye kullanımın önlenmesi, meşru menfaat (m.5/2-f).
+  <strong>Yurt dışına aktarım:</strong> fotoğraflar ve kedi bilgileri, Almanya'daki sunucumuz (netcup GmbH, Nürnberg) üzerinden, üretim için ABD'deki Anthropic ve Higgsfield'a aktarılır. Aktarım yalnızca istediğin hizmeti sunmak için yapılır ve gönderimden önce uygulamadaki onay ekranında alıcıları ve ABD'de olduklarını görerek verdiğin açık rızaya dayanır (KVKK m.9). Rızanı Ayarlar → Gizlilik → "Onayı geri al" ile istediğin zaman geri alabilirsin; bu, sonraki gönderimleri durdurur. KVKK kapsamındaki taleplerin için: <a href="mailto:erengn@gmail.com">erengn@gmail.com</a>.
+  Rıza vermezsen canlı kedi üretilemez; uygulamanın diğer bölümleri ve hazır karakterler kullanılabilir.</p>
+
+  <h2>8. Çocuklar</h2>
+  <p>Miyav çocuklara yönelik değildir ve bilerek 13 yaşından küçüklerden veri toplamaz.</p>
+
+  <h2>9. Değişiklikler</h2>
+  <p>Bu politika değişirse güncel hali bu sayfada, tarihiyle birlikte yayımlanır. Telefondan çıkan veri türleri değişirse yeni bir gönderimden önce uygulama içinde de haber veririz.</p>
+
+  <footer><a href="../">Miyav</a> · <a href="./">Gizlilik Politikası</a> · <a href="../kosullar/">Kullanım Koşulları</a> · <a href="../destek/">Destek</a><br><a href="mailto:erengn@gmail.com">erengn@gmail.com</a></footer>
+</main>
+</body>
+</html>

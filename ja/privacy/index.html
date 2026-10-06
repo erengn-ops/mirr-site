@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Meowly プライバシーポリシー</title>
+<meta name="description" content="Meowly（Miyav）のプライバシーポリシー。個人情報保護法に関する事項を含みます。">
+<link rel="canonical" href="https://erengn-ops.github.io/mirr-site/ja/privacy/">
+<link rel="alternate" hreflang="tr" href="https://erengn-ops.github.io/mirr-site/gizlilik/">
+<link rel="alternate" hreflang="en" href="https://erengn-ops.github.io/mirr-site/en/privacy/">
+<link rel="alternate" hreflang="ja" href="https://erengn-ops.github.io/mirr-site/ja/privacy/">
+<link rel="alternate" hreflang="ko" href="https://erengn-ops.github.io/mirr-site/ko/privacy/">
+<link rel="alternate" hreflang="zh-Hant" href="https://erengn-ops.github.io/mirr-site/zh-hant/privacy/">
+<link rel="alternate" hreflang="x-default" href="https://erengn-ops.github.io/mirr-site/en/privacy/">
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<main>
+  <header class="site">
+    <a class="brand" href="../">Meowly</a>
+    <nav><a href="./" aria-current="page">プライバシー</a><a href="../terms/">利用規約</a><a href="../support/">サポート</a></nav>
+  </header>
+  <nav class="lang" aria-label="言語"><a href="../../gizlilik/" hreflang="tr" lang="tr">Türkçe</a> <a href="../../en/privacy/" hreflang="en" lang="en">English</a> <a href="./" hreflang="ja" lang="ja" aria-current="true">日本語</a> <a href="../../ko/privacy/" hreflang="ko" lang="ko">한국어</a> <a href="../../zh-hant/privacy/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></nav>
+  <h1>プライバシーポリシー</h1>
+  <p class="meta">最終更新日：2026年10月6日 · 本ページは<a href="../../en/privacy/">英語版</a>の翻訳です。内容に相違がある場合は英語版が優先します。</p>
+
+  <div class="card">
+    <strong>概要：</strong>アカウント登録なし、広告なし、トラッキングなし。猫の記録、健康手帳、音声はiPhoneの中だけに保存されます。
+    データがiPhoneの外に送られるのは「動くうちの子」をつくるときだけです。送られるのは、えらんだ<strong>1〜4枚の猫の写真</strong>、<strong>猫の名前</strong>、
+    任意で入力した猫の情報（目の色、年齢、品種など）、購入を確認するためのApple署名付き取引情報、そして通知を許可した場合の<strong>プッシュ通知トークン</strong>です。
+    写真は当方のサーバーと米国の2社（Anthropic、Higgsfield）で処理されます。サーバー上の処理記録は<strong>24時間以内</strong>に削除されます。
+  </div>
+
+  <h2>1. 個人情報の取扱事業者</h2>
+  <p>Meowlyは、トルコを拠点とする個人開発者 <strong>Batuhan Eren Engin</strong>（App Storeに表示される販売者）が提供しており、本ポリシーに記載する個人データの管理者です。
+  連絡先：<a href="mailto:erengn@gmail.com">erengn@gmail.com</a></p>
+
+  <h2>2. iPhoneの中だけに保存されるデータ</h2>
+  <ul>
+    <li><strong>マイクと音声：</strong>猫語翻訳は、Apple標準のサウンド分類機能を使ってiPhone上で音声を解析します。音声がアップロードされることはありません。</li>
+    <li><strong>猫のプロフィール、健康記録、ワクチン、お薬、体重、アルバム、リマインダー、翻訳履歴：</strong>iPhone内のアプリのデータベースに保存され、当方には送信されません。</li>
+    <li><strong>健康・行動についての質問：</strong>iPhone上のAppleのモデル、またはアプリ内蔵のガイドが回答します。質問内容を当方が受け取ることはありません。</li>
+    <li><strong>リマインダー：</strong>iPhone上で設定されるローカル通知です。</li>
+  </ul>
+
+  <h2>3. iPhoneの外に送られるデータ：動くうちの子の作成</h2>
+  <p>「うちの子を動かす」をえらぶと、まず何がどこに送られるかを説明する同意画面が表示されます。同意した場合にのみ、以下のデータが暗号化された通信（HTTPS）で送信されます。写真は送信前にiPhone上で再エンコードされ、位置情報やカメラ情報（EXIF）は削除されます。</p>
+  <table>
+    <tr><th>データ</th><th>受け取る者と目的</th><th>保存期間</th></tr>
+    <tr><td>猫の写真1〜4枚</td><td><strong>当方のサーバー</strong>が処理を管理します。<strong>Anthropic</strong>（Claude、米国）が写真に猫が1匹写っているかを確認し、外見（毛色、柄、模様、目の色）を記述し、生成画像がうちの子に似ているかを確認します。<strong>Higgsfield</strong>（米国）がAIでスタジオ風画像と動画を生成します。</td><td>当方のサーバーは処理中のみメモリ上に保持し、ディスクには書き込みません。生成した動画の確認中にできる一時ファイルは確認が終わるとすぐに削除され、いずれの場合も、うちの子の作成後または処理の失敗後7日を超えて当方のサーバーに残ることはありません。提供先については下記「委託先」をご覧ください。</td></tr>
+    <tr><td>猫の名前</td><td>当方のサーバーのみ：進行状況の表示と「準備ができました」の通知に使います。</td><td>処理記録とともに24時間以内に削除。</td></tr>
+    <tr><td>任意で入力した情報：目の色、年齢、体格、毛の長さ、品種、体重</td><td>当方のサーバーとAnthropicが写真との照合に使います。Higgsfieldには外見の説明文の一部として送られます。</td><td>処理記録とともに24時間以内に削除。</td></tr>
+    <tr><td>プッシュ通知トークン（通知を許可した場合のみ）</td><td>当方のサーバーが、Appleのプッシュ通知サービスを通じて「準備ができました」（または「問題が発生しました」）の通知を1回送るために使います。</td><td>処理記録とともに24時間以内に削除。Appleが無効と通知した場合はそれ以前に削除。</td></tr>
+    <tr><td>Apple署名付き取引情報</td><td>当方のサーバーが、1回ごとの購入（「うちの子を動かす」「もう1匹」「うちの子が大きくなった」）が有効であることを確認し、購入ごとの作成回数の上限を管理するために使います（第4項）。</td><td>元の取引IDの一方向ハッシュとカウンターのみを保存します。最後の利用から12か月後に自動で削除されます。</td></tr>
+    <tr><td>生成された画像と動画</td><td>Higgsfieldで生成され、iPhoneにダウンロードされます。背景はiPhone上で除去され、iPhoneに保存されます。</td><td>処理記録内のリンクは24時間以内に削除。Higgsfield上のコピーは同社の規約に従います。</td></tr>
+    <tr><td>接続データ（IPアドレス、日時、リクエスト）</td><td>サービスをホストするサーバーが、セキュリティと運用のために記録します。</td><td>当方のサーバーはドイツ（EU）ニュルンベルクのnetcup GmbHがホスティングしています。サーバーのログは30日間保存し、その後自動で削除します。</td></tr>
+  </table>
+  <p><strong>iPhoneに保存される写真：</strong>動くうちの子のためにえらんだ写真は、うちの子のすべての動きがiPhoneに入るまでiPhoneの中だけに保存され、その後iPhoneから削除されます。「すべてのデータを削除」でいつでも削除できます。</p>
+  <p><strong>委託先：</strong><strong>Anthropic</strong>（Anthropic, PBC、米国。モデルはClaude Haiku）は、うちの子の確認と外見の記述のためにのみ写真と情報を受け取ります。同社の<a href="https://www.anthropic.com/legal/commercial-terms">商用利用規約</a>により、Anthropicは顧客コンテンツをモデルの学習に使用できません。<a href="https://www.anthropic.com/legal/privacy">プライバシーポリシー</a>に記載のとおり、安全性と不正利用の監視のため限られた期間保存することがあります。<strong>Higgsfield</strong>（Higgsfield Inc.、米国）は提携先のモデル（現在、画像はAlibabaのQwen-Image、動画はKuaishouのKling）でスタジオ風画像と動画を生成し、写真・説明文・生成物を同社の規約と保存ルールに従って処理します。同社の<a href="https://higgsfield.ai/privacy-policy">プライバシーポリシー</a>には、入力と出力をAIモデルの学習・改善に使用する場合があること、削除されたコンテンツが30日間稼働中のサーバーに、その後もバックアップに残る場合があることが記載されています。当方はデータを販売せず、広告やプロファイリングにも使用しません。</p>
+  <p><strong>写真に人物、顔、書類、その他の個人情報が写らないようにしてください。</strong>アプリが求めるのは猫の写真だけです。</p>
+  <p>同意しない場合は何も送信されず、動くうちの子はつくられません。アプリのほかの機能と、用意されている猫はそのまま使えます。同意は設定 → プライバシー →「同意を取り消す」から撤回でき、以後の送信は行われません。</p>
+
+  <h2>4. 購入について</h2>
+  <p>お支払いはすべてAppleが処理します。当方がカード情報、氏名、Appleアカウントを見ることはありません。アプリはiPhone上でAppleのStoreKitから購入内容を読み取ります。動くうちの子をつくる際、Apple署名付きの取引情報（取引ID、商品、環境）が写真とともに当方のサーバーに送信され、購入が有効かどうかの確認と、購入ごとの作成回数の制限（1匹＋再試行2回）に使われます。返金された購入では、新しい猫はつくられません。<strong>Meowly Plus</strong>の購入はiPhone上でのみ確認され、当方には何も送信されません。</p>
+
+  <h2>5. お問い合わせいただいた場合</h2>
+  <p>メールをいただいた場合、メールアドレスと内容を受け取ります。返信のためにのみ使用し、そのために必要な期間だけ保存します。</p>
+
+  <h2>6. 収集しないもの</h2>
+  <p>アカウント、氏名、電話番号、位置情報、連絡先、広告識別子、利用状況の分析、クラッシュレポートSDK、広告SDKはいずれも使用しません。アプリはほかの会社のアプリやWebサイトをまたいであなたをトラッキングせず、個人情報を販売・共有しません。</p>
+
+  <h2>7. データの削除</h2>
+  <ul>
+    <li><strong>iPhone上のデータ：</strong>設定 → データ →「すべてのデータを削除」で、猫のプロフィール、健康記録、アルバム、リマインダー、翻訳履歴、生成した猫、動きが入るまで保存されている写真、送信への同意が削除されます。アプリを削除してもiPhone上のデータはすべて消えます。</li>
+    <li><strong>当方のサーバー上のデータ：</strong>処理記録は24時間以内に自動で削除されます。アカウントがないため、あなたを特定できる情報は保持していません。それより早い削除をご希望の場合は、アップロードしたおおよその日時を添えてメールでご連絡ください。</li>
+  </ul>
+
+  <h2>8. 日本の個人情報保護法に関する事項</h2>
+  <ul>
+    <li>個人情報取扱事業者：Batuhan Eren Engin。保有個人データの開示、訂正、利用停止等の請求および苦情の窓口：<a href="mailto:erengn@gmail.com">erengn@gmail.com</a></li>
+    <li>外国にある第三者への提供：写真と関連データは、アプリ内の同意画面でいただいた同意にもとづき、米国のAnthropicとHiggsfieldに提供されます。米国には日本の個人情報保護法に相当する包括的な連邦法はなく、一部の州が独自の法律（カリフォルニア州消費者プライバシー法など）を定めています。Anthropicは当方へのサービス提供のためにのみデータを処理し、Higgsfieldは同社の規約とプライバシーポリシーに従って処理します（第3項「委託先」参照）。</li>
+    <li>安全管理措置：暗号化通信（HTTPS）、写真はメモリ上のみで保持、処理記録は24時間以内に削除、サーバーへのアクセスは開発者に限定。サーバーの所在国：ドイツ（netcup GmbH、ニュルンベルク）</li>
+  </ul>
+
+  <h2>9. EEA・英国・その他の地域</h2>
+  <p>EU一般データ保護規則（GDPR）、英国GDPR、韓国の個人情報保護法、トルコのKVKKにもとづく法的根拠、国外移転、あなたの権利、監督機関への申立てについては<a href="../../en/privacy/">英語版</a>をご覧ください。</p>
+
+  <h2>10. お子さまについて</h2>
+  <p>Meowlyは子ども向けのアプリではなく、13歳未満（お住まいの国でそれより高い年齢が定められている場合はその年齢未満）のお子さまのデータを意図して収集することはありません。</p>
+
+  <h2>11. 変更について</h2>
+  <p>本ポリシーを変更した場合は、日付とともに本ページに掲載します。iPhoneの外に送られるデータの種類が変わる場合は、新たな送信の前にアプリ内でもお知らせします。</p>
+
+  <footer><a href="../">Meowly</a> · <a href="./">プライバシーポリシー</a> · <a href="../terms/">利用規約</a> · <a href="../support/">サポート</a><br><a href="mailto:erengn@gmail.com">erengn@gmail.com</a></footer>
+</main>
+</body>
+</html>

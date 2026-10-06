@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Meowly Privacy Policy</title>
+<meta name="description" content="Meowly (Miyav) privacy policy, including GDPR/UK GDPR, Japan APPI and Korea PIPA notes.">
+<link rel="canonical" href="https://erengn-ops.github.io/mirr-site/en/privacy/">
+<link rel="alternate" hreflang="tr" href="https://erengn-ops.github.io/mirr-site/gizlilik/">
+<link rel="alternate" hreflang="en" href="https://erengn-ops.github.io/mirr-site/en/privacy/">
+<link rel="alternate" hreflang="ja" href="https://erengn-ops.github.io/mirr-site/ja/privacy/">
+<link rel="alternate" hreflang="ko" href="https://erengn-ops.github.io/mirr-site/ko/privacy/">
+<link rel="alternate" hreflang="zh-Hant" href="https://erengn-ops.github.io/mirr-site/zh-hant/privacy/">
+<link rel="alternate" hreflang="x-default" href="https://erengn-ops.github.io/mirr-site/en/privacy/">
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+<main>
+  <header class="site">
+    <a class="brand" href="../">Meowly</a>
+    <nav><a href="./" aria-current="page">Privacy</a><a href="../terms/">Terms</a><a href="../support/">Support</a></nav>
+  </header>
+  <nav class="lang" aria-label="Language"><a href="../../gizlilik/" hreflang="tr" lang="tr">Türkçe</a> <a href="./" hreflang="en" lang="en" aria-current="true">English</a> <a href="../../ja/privacy/" hreflang="ja" lang="ja">日本語</a> <a href="../../ko/privacy/" hreflang="ko" lang="ko">한국어</a> <a href="../../zh-hant/privacy/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></nav>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Last updated: 6 October 2026 · This English version applies in every country except Türkiye, where the <a href="../../gizlilik/">Turkish version</a> applies. Translations into Japanese, Korean and Chinese are provided for convenience.</p>
+
+  <div class="card">
+    <strong>In short:</strong> no account, no ads, no tracking. Your cat records, health journal and audio stay on your iPhone.
+    Data leaves your iPhone only when you create your living cat: the <strong>1–4 cat photos</strong>, the <strong>cat's name</strong>,
+    the details you choose to enter about the cat (such as eye colour, age or breed), Apple's signed proof of your purchase and,
+    if you allow notifications, a <strong>push token</strong>. Photos are processed by our server and by two providers in the USA
+    (Anthropic and Higgsfield). Our server keeps the job record for no longer than <strong>24 hours</strong>.
+  </div>
+
+  <h2>1. Who is responsible</h2>
+  <p>Meowly is published by <strong>Batuhan Eren Engin</strong>, an individual developer based in Türkiye, who is the controller of the personal data described here (the seller shown on the App Store).
+  Contact: <a href="mailto:erengn@gmail.com">erengn@gmail.com</a>.</p>
+
+  <h2>2. Data that stays on your iPhone</h2>
+  <ul>
+    <li><strong>Microphone and audio:</strong> the cat translator analyses sound on your iPhone with Apple's built-in sound classifier. Audio is never uploaded.</li>
+    <li><strong>Cat profiles, health records, vaccinations, medication, weight, memories, reminders, translation history:</strong> stored in the app's database on your iPhone. Not sent to us.</li>
+    <li><strong>Health and behaviour questions:</strong> answered by Apple's on-device model or the app's built-in guide. We do not receive your questions.</li>
+    <li><strong>Reminders:</strong> local notifications scheduled on your iPhone.</li>
+  </ul>
+
+  <h2>3. Data that leaves your iPhone: creating your living cat</h2>
+  <p>When you choose "Bring your cat to life", the app first shows a consent screen explaining what is sent and to whom. Only after you agree does it send the following over an encrypted connection (HTTPS). Photos are re-encoded on your iPhone before upload, which removes location and camera metadata.</p>
+  <table>
+    <tr><th>Data</th><th>Who receives it and why</th><th>How long</th></tr>
+    <tr><td>1–4 photos of your cat</td><td><strong>Our server</strong> runs the job. <strong>Anthropic</strong> (Claude, USA) checks that the photos show one cat, describes its appearance (coat colour, pattern, markings, eye colour) and checks that the generated image looks like your cat. <strong>Higgsfield</strong> (USA) generates the studio image and the animation videos with AI.</td><td>Our server holds photos in memory only while the job runs and never writes them to disk. Temporary files made while checking the generated clips are deleted as soon as each check ends; in every case nothing from your job stays on our server longer than 7 days after your cat is created or the job fails. Providers: see "Providers" below.</td></tr>
+    <tr><td>Cat's name</td><td>Our server only: progress messages and the "your cat is ready" notification.</td><td>Job record, deleted within 24 hours.</td></tr>
+    <tr><td>Details you choose to enter: eye colour, age, size, coat length, breed, weight (all optional)</td><td>Our server and Anthropic, to compare them with the photos; Higgsfield receives them as part of the text description of your cat's appearance.</td><td>Job record, deleted within 24 hours.</td></tr>
+    <tr><td>Push token (only if you allow notifications)</td><td>Our server, to send one "your cat is ready" (or "something went wrong") notification through Apple Push Notification service.</td><td>Job record, deleted within 24 hours; removed earlier if Apple reports it invalid.</td></tr>
+    <tr><td>Apple-signed transaction information</td><td>Our server, to verify your one-time purchase ("Bring Your Cat to Life", "Extra Cat" or "My Cat Grew Up") and to enforce the limit per purchase. See section 4.</td><td>Only a one-way hash of the original transaction ID and a counter are kept. They are deleted automatically 12 months after their last use.</td></tr>
+    <tr><td>Generated images and videos</td><td>Created at Higgsfield and downloaded to your iPhone, where the background is removed and they are stored.</td><td>Links in our job record: within 24 hours. Copies at Higgsfield: under its terms.</td></tr>
+    <tr><td>Connection data (IP address, time, request)</td><td>The server that hosts our service, for security and operation.</td><td>Our server is hosted by netcup GmbH in Nuremberg, Germany (EU). Server logs are kept for 30 days, then deleted automatically.</td></tr>
+  </table>
+  <p><strong>Photos kept on your iPhone:</strong> the photos you pick for your living cat are kept only on your iPhone until all of your cat's moves have been installed on it, and are then deleted from your iPhone. "Delete all my data" deletes them at any time.</p>
+  <p><strong>Providers:</strong> <strong>Anthropic</strong> (Anthropic, PBC, USA; model Claude Haiku) receives the photos and details only to check and describe your cat. Under its <a href="https://www.anthropic.com/legal/commercial-terms">Commercial Terms of Service</a>, Anthropic may not train models on customer content from its services; it may keep data for a limited period for safety and abuse monitoring, as described in its <a href="https://www.anthropic.com/legal/privacy">Privacy Policy</a>. <strong>Higgsfield</strong> (Higgsfield Inc., USA) generates the studio image and the videos with partner models (today Qwen-Image by Alibaba for the image and Kling by Kuaishou for the videos). Higgsfield processes the photos, the description and the generated media under its own terms and retention rules: its <a href="https://higgsfield.ai/privacy-policy">Privacy Policy</a> says it may use inputs and outputs to train and improve its AI models, and that removed content may stay on its active servers for 30 days and in backups after that. We do not sell your data and do not use it for advertising or profiling.</p>
+  <p><strong>Please do not include people, faces, documents or other personal information in the photos.</strong> The app only asks for photos of your cat.</p>
+  <p>If you do not agree, nothing is uploaded and no living cat is created; you can keep using the rest of the app and the ready-made cats. You can withdraw consent in Settings → Privacy → "Withdraw consent"; this stops future uploads.</p>
+
+  <h2>4. Purchases</h2>
+  <p>Payments are handled entirely by Apple. We never see your card details, name or Apple Account. The app reads your purchases from Apple's StoreKit on your iPhone. When you create a living cat, the Apple-signed transaction information (transaction ID, product, environment) is sent to our server with the photos so that we can check the purchase is valid and limit generation per purchase (one cat plus two retries). If a purchase is refunded, our server does not create new cats for it. <strong>Meowly Plus</strong> is checked only on your iPhone; nothing about it is sent to us.</p>
+
+  <h2>5. When you contact us</h2>
+  <p>If you email us, we receive your email address and whatever you write. We use it only to answer you and keep it only as long as needed for that.</p>
+
+  <h2>6. What we do not collect</h2>
+  <p>No account, name, phone number, location, contacts, advertising identifier, usage analytics, crash-reporting SDK or advertising SDK. The app does not track you across other companies' apps or websites and does not sell or share personal information.</p>
+
+  <h2>7. Deleting your data</h2>
+  <ul>
+    <li><strong>On your iPhone:</strong> Settings → Data → "Delete all my data" removes cat profiles, health records, memories, reminders, translation history, generated cats, any photos kept until your cat's moves are installed, and your upload consent. Deleting the app also removes everything on the device.</li>
+    <li><strong>On our server:</strong> the job record is deleted automatically within 24 hours. With no account we hold nothing that identifies you; if you want it deleted sooner, email us with the approximate time of the upload.</li>
+  </ul>
+
+  <h2>8. Legal bases (EEA, UK and Switzerland)</h2>
+  <table>
+    <tr><th>Purpose</th><th>Legal basis</th></tr>
+    <tr><td>Creating your living cat from photos, name and optional details; sending the "ready" notification</td><td>Performance of the contract you asked for (Art. 6(1)(b) GDPR / UK GDPR). Before any upload we also ask for your consent, which you can withdraw at any time.</td></tr>
+    <tr><td>Verifying purchases and limiting generation per purchase</td><td>Performance of the contract and our legitimate interest in preventing abuse (Art. 6(1)(b) and (f)).</td></tr>
+    <tr><td>Server security logs</td><td>Legitimate interest in running a secure service (Art. 6(1)(f)).</td></tr>
+    <tr><td>Answering your emails</td><td>Legitimate interest in answering you, or steps you request before a contract (Art. 6(1)(f) and (b)).</td></tr>
+  </table>
+  <p>We do not use automated decision-making that produces legal or similarly significant effects.</p>
+
+  <h2>9. International transfers</h2>
+  <p>The controller is in Türkiye, our server is in Germany (EU), and Anthropic and Higgsfield (with its partner models) process data in the United States and possibly other countries. Data is transferred abroad only to provide the service you ask for. Before any upload, the in-app consent screen names the recipients and that they are in the USA; the transfer is based on the explicit consent you give there (Art. 49(1)(a) GDPR / UK GDPR). These countries may not offer the same level of data protection as your own. You can withdraw consent at any time in Settings → Privacy → "Withdraw consent"; this stops future uploads.</p>
+
+  <h2>10. Your rights</h2>
+  <p>Depending on where you live, you can ask for access to, correction or deletion of your data, restriction of processing, data portability, object to processing based on legitimate interest, and withdraw consent at any time (without affecting earlier processing). Email <a href="mailto:erengn@gmail.com">erengn@gmail.com</a>; because there is no account, mention the approximate time of your upload so we can find the job. We answer within one month.</p>
+  <p>You can also complain to a data protection authority, for example the authority where you live or work in the EEA, the UK Information Commissioner's Office (ico.org.uk) or the Swiss FDPIC.</p>
+  <p><strong>Data protection officer:</strong> we have not appointed one, because our processing does not meet the conditions that require it (Art. 37 GDPR). Contact us at the address above. <strong>EU/UK representative:</strong> none has been appointed. Requests from the EU, the UK and Türkiye (KVKK) are handled at <a href="mailto:erengn@gmail.com">erengn@gmail.com</a>.</p>
+
+  <h2>11. Japan (Act on the Protection of Personal Information)</h2>
+  <ul>
+    <li>Business operator: Batuhan Eren Engin; contact for disclosure, correction, suspension of use or complaints: <a href="mailto:erengn@gmail.com">erengn@gmail.com</a>.</li>
+    <li>Provision to third parties in a foreign country: photos and related data are provided to Anthropic and Higgsfield in the United States with your consent on the in-app consent screen. The United States has no comprehensive federal privacy law equivalent to the APPI; some states have their own laws (for example California's CCPA). Anthropic processes it only to provide its service to us; Higgsfield processes it under its own terms and privacy policy (see "Providers" in section 3).</li>
+    <li>Security measures: encrypted transport (HTTPS), photos held in memory only, job records deleted within 24 hours, access to the server limited to the developer. The server is located in Germany (netcup GmbH, Nuremberg).</li>
+  </ul>
+
+  <h2>12. Republic of Korea (Personal Information Protection Act)</h2>
+  <ul>
+    <li>Items, purposes and retention: as in sections 3–5. Data is destroyed when the purpose is achieved: job records are deleted automatically within 24 hours; on-device data is erased with "Delete all my data" or by deleting the app.</li>
+    <li>Overseas transfer: to Anthropic (USA) and Higgsfield (USA), over the network (HTTPS) at the time you request your living cat; items: photos, optional cat details; purpose: creating your cat; retention: see "Providers". You can refuse by not agreeing on the consent screen; then the living cat cannot be created, but the rest of the app works.</li>
+    <li>Privacy officer: Batuhan Eren Engin, <a href="mailto:erengn@gmail.com">erengn@gmail.com</a>. You can also contact the Personal Information Infringement Report Center (privacy.kisa.or.kr, 118) or the Personal Information Dispute Mediation Committee (kopico.go.kr, 1833-6972).</li>
+  </ul>
+
+  <h2>13. Türkiye, Taiwan, Hong Kong and Macau</h2>
+  <p>For users in Türkiye the <a href="../../gizlilik/">Turkish privacy policy and KVKK notice</a> applies. The notice under Taiwan's Personal Data Protection Act is in the <a href="../../zh-hant/privacy/">Traditional Chinese version</a>. Users in Hong Kong and Macau can exercise their rights under local law by emailing us.</p>
+
+  <h2>14. Children</h2>
+  <p>Meowly is not directed at children and does not knowingly collect data from children under 13 (or the higher minimum age in your country).</p>
+
+  <h2>15. Changes</h2>
+  <p>If this policy changes, the current version is published on this page with its date. If the kinds of data that leave your iPhone change, we will also tell you in the app before any new upload.</p>
+
+  <footer><a href="../">Meowly</a> · <a href="./">Privacy Policy</a> · <a href="../terms/">Terms of Use</a> · <a href="../support/">Support</a><br><a href="mailto:erengn@gmail.com">erengn@gmail.com</a></footer>
+</main>
+</body>
+</html>
