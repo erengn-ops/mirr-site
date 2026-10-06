@@ -29,7 +29,7 @@
     Telefondan veri yalnızca canlı kedini oluştururken çıkar: seçtiğin <strong>1–4 kedi fotoğrafı</strong>, <strong>kedinin adı</strong>,
     kedin hakkında girmeyi seçtiğin bilgiler (göz rengi, yaş, cins gibi), satın almanı doğrulayan Apple imzalı işlem bilgisi ve bildirimlere
     izin verdiysen bir <strong>bildirim jetonu</strong>. Fotoğraflar sunucumuzda ve ABD'deki iki sağlayıcıda (Anthropic, Higgsfield) işlenir.
-    Sunucumuz iş kaydını en fazla <strong>24 saat</strong> tutar.
+    Sunucumuz iş kaydını, kedin telefonuna ulaştıktan en geç <strong>7 gün</strong> sonra siler; kedin hazır olduktan sonra hiçbir durumda 30 günden uzun tutmaz.
   </div>
 
   <h2>1. Telefonunda kalan veriler</h2>
@@ -44,12 +44,12 @@
   <p>"Kendi kedini canlandır" dediğinde uygulama önce neyin kime gittiğini anlatan bir onay ekranı gösterir. Yalnızca onay verirsen aşağıdakiler şifreli bağlantıyla (HTTPS) gönderilir. Fotoğraflar gönderilmeden önce telefonunda yeniden kodlanır; konum ve kamera bilgisi (EXIF) bu sırada silinir.</p>
   <table>
     <tr><th>Veri</th><th>Kim alır, ne için</th><th>Ne kadar</th></tr>
-    <tr><td>Kedinin 1–4 fotoğrafı</td><td><strong>Miyav sunucusu</strong> işi yönetir. <strong>Anthropic</strong> (Claude, ABD) fotoğrafta tek bir kedi olduğunu kontrol eder, görünüşünü (tüy rengi, desen, işaretler, göz rengi) tanımlar ve üretilen görselin kedine benzeyip benzemediğini denetler. <strong>Higgsfield</strong> (ABD) stüdyo görselini ve animasyon videolarını yapay zekâ ile üretir.</td><td>Sunucumuz fotoğrafları yalnızca iş sürerken bellekte tutar, diske yazmaz. Üretilen kliplerin kontrolü sırasında oluşan geçici dosyalar her kontrol biter bitmez silinir; her durumda işine ait hiçbir şey, kedin üretildikten ya da iş başarısız olduktan sonra 7 günden uzun sunucumuzda kalmaz. Sağlayıcılar: aşağıda.</td></tr>
-    <tr><td>Kedinin adı</td><td>Yalnızca sunucumuz: ilerleme mesajları ve "kedin hazır" bildirimi.</td><td>İş kaydı, en geç 24 saatte silinir.</td></tr>
-    <tr><td>Girmeyi seçtiğin bilgiler: göz rengi, yaş, boy, tüy uzunluğu, cins, kilo (hepsi isteğe bağlı)</td><td>Sunucumuz ve Anthropic, fotoğraflarla karşılaştırmak için; Higgsfield, kedinin görünüş tarifinin parçası olarak.</td><td>İş kaydı, en geç 24 saatte silinir.</td></tr>
-    <tr><td>Bildirim jetonu (yalnızca bildirimlere izin verdiysen)</td><td>Sunucumuz, Apple Anında Bildirim Servisi üzerinden tek bir "kedin hazır" (ya da "bir aksilik oldu") bildirimi göndermek için.</td><td>İş kaydı, en geç 24 saatte silinir; Apple geçersiz derse daha önce.</td></tr>
+    <tr><td>Kedinin 1–4 fotoğrafı</td><td><strong>Miyav sunucusu</strong> işi yönetir. <strong>Anthropic</strong> (Claude, ABD) fotoğrafta tek bir kedi olduğunu kontrol eder, görünüşünü (tüy rengi, desen, işaretler, göz rengi) tanımlar ve üretilen görselin kedine benzeyip benzemediğini denetler. <strong>Higgsfield</strong> (ABD) stüdyo görselini ve animasyon videolarını yapay zekâ ile üretir.</td><td>Sunucumuz fotoğrafları yalnızca iş sürerken bellekte tutar, diske yazmaz. Üretilen kliplerin kontrolü sırasında oluşan geçici dosyalar her kontrol biter bitmez silinir; her durumda işine ait hiçbir şey, kedin hazır olduktan sonra 30 günden, iş başarısız olduktan sonra 7 günden uzun sunucumuzda kalmaz. Sağlayıcılar: aşağıda.</td></tr>
+    <tr><td>Kedinin adı</td><td>Yalnızca sunucumuz: ilerleme mesajları ve "kedin hazır" bildirimi.</td><td>İş kaydıyla birlikte silinir (bölüm 6).</td></tr>
+    <tr><td>Girmeyi seçtiğin bilgiler: göz rengi, yaş, boy, tüy uzunluğu, cins, kilo (hepsi isteğe bağlı)</td><td>Sunucumuz ve Anthropic, fotoğraflarla karşılaştırmak için; Higgsfield, kedinin görünüş tarifinin parçası olarak.</td><td>İş kaydıyla birlikte silinir (bölüm 6).</td></tr>
+    <tr><td>Bildirim jetonu (yalnızca bildirimlere izin verdiysen)</td><td>Sunucumuz, Apple Anında Bildirim Servisi üzerinden tek bir "kedin hazır" (ya da "bir aksilik oldu") bildirimi göndermek için.</td><td>İş kaydıyla birlikte silinir (bölüm 6); Apple geçersiz derse daha önce.</td></tr>
     <tr><td>Apple imzalı işlem bilgisi</td><td>Sunucumuz, tek seferlik satın almanın ("Kedini canlandır", "Ek kedi" ya da "Kedim büyüdü") geçerli olduğunu doğrulamak ve satın alma başına sınırı uygulamak için (bölüm 3).</td><td>Yalnızca ilk işlem numarasının tek yönlü özeti (hash) ve bir sayaç tutulur. Son kullanımdan 12 ay sonra kendiliğinden silinir.</td></tr>
-    <tr><td>Üretilen görseller ve videolar</td><td>Higgsfield'da üretilir, telefonuna indirilir; arka planı telefonunda temizlenir ve orada saklanır.</td><td>İş kaydındaki bağlantılar 24 saat içinde silinir; Higgsfield'daki kopyalar onun koşullarına tabidir.</td></tr>
+    <tr><td>Üretilen görseller ve videolar</td><td>Higgsfield'da üretilir, telefonuna indirilir; arka planı telefonunda temizlenir ve orada saklanır.</td><td>Kedin 24 saat içinde telefonuna inmezse, indirme yine tamamlanabilsin diye sunucumuz (Almanya) üretilen görsellerin ve videoların bir kopyasını tutar. Bağlantılar ve bu kopya iş kaydıyla birlikte silinir (bölüm 6); Higgsfield'daki kopyalar onun koşullarına tabidir.</td></tr>
     <tr><td>Bağlantı verisi (IP adresi, zaman, istek)</td><td>Hizmetimizi barındıran sunucu, güvenlik ve işletim için.</td><td>Sunucumuz netcup GmbH tarafından Almanya'da (Nürnberg, AB) barındırılır. Sunucu logları 30 gün tutulur, sonra kendiliğinden silinir.</td></tr>
   </table>
   <p><strong>Telefonunda tutulan fotoğraflar:</strong> Canlı kedin için seçtiğin fotoğraflar, kedinin tüm hareketleri telefonuna yüklenene kadar yalnızca telefonunda saklanır, ardından telefondan silinir. "Tüm verilerimi sil" bunları her an siler.</p>
@@ -69,7 +69,7 @@
   <h2>6. Silme ve hakların</h2>
   <ul>
     <li><strong>Telefondaki veriler:</strong> Ayarlar → Veriler → "Tüm verilerimi sil" kedi profillerini, sağlık kayıtlarını, anıları, hatırlatıcıları, çeviri geçmişini, canlandırılan kedileri, hareketler yüklenene kadar tutulan fotoğrafları ve gönderim onayını siler. Uygulamayı silmek de telefondaki her şeyi siler.</li>
-    <li><strong>Sunucudaki iş kaydı:</strong> 24 saat içinde kendiliğinden silinir. Hesap olmadığı için seni tanımlayan bir kayıt tutmayız; daha erken silinmesini istersen yükleme zamanını yazman yeterli.</li>
+    <li><strong>Sunucudaki iş kaydı:</strong> Telefonundaki uygulama kedini aldığını bildirdikten sonra, varsa üretilen görsel ve videoların kopyasıyla birlikte en geç 7 gün içinde kendiliğinden silinir; bu süre kalan hareketlerin inebilmesi ve yarım kalan bir indirmenin yeniden verilebilmesi içindir. Bu bildirim hiç gelmezse kedin hazır olduktan 30 gün sonra silinir. Kedi çıkmayan bir iş, başladıktan sonra 24 saat içinde silinir (incelemeye alınırsa en geç 7 gün). Hesap olmadığı için seni tanımlayan bir kayıt tutmayız; daha erken silinmesini istersen yükleme zamanını yazman yeterli.</li>
     <li>KVKK'nın 11. maddesindeki hakların (bilgi talep etme, düzeltme, silme, itiraz, yurt dışına aktarılan veriler ve alıcılar hakkında bilgi) için <a href="mailto:erengn@gmail.com">erengn@gmail.com</a> adresine yazabilirsin. Kişisel Verileri Koruma Kurulu'na şikâyet hakkın saklıdır.</li>
   </ul>
 

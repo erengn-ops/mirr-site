@@ -29,7 +29,7 @@
     Data leaves your iPhone only when you create your living cat: the <strong>1–4 cat photos</strong>, the <strong>cat's name</strong>,
     the details you choose to enter about the cat (such as eye colour, age or breed), Apple's signed proof of your purchase and,
     if you allow notifications, a <strong>push token</strong>. Photos are processed by our server and by two providers in the USA
-    (Anthropic and Higgsfield). Our server keeps the job record for no longer than <strong>24 hours</strong>.
+    (Anthropic and Higgsfield). Our server deletes the job record at the latest <strong>7 days</strong> after your iPhone has received your cat, and never keeps it more than 30 days after the cat is ready.
   </div>
 
   <h2>1. Who is responsible</h2>
@@ -48,12 +48,12 @@
   <p>When you choose "Bring your cat to life", the app first shows a consent screen explaining what is sent and to whom. Only after you agree does it send the following over an encrypted connection (HTTPS). Photos are re-encoded on your iPhone before upload, which removes location and camera metadata.</p>
   <table>
     <tr><th>Data</th><th>Who receives it and why</th><th>How long</th></tr>
-    <tr><td>1–4 photos of your cat</td><td><strong>Our server</strong> runs the job. <strong>Anthropic</strong> (Claude, USA) checks that the photos show one cat, describes its appearance (coat colour, pattern, markings, eye colour) and checks that the generated image looks like your cat. <strong>Higgsfield</strong> (USA) generates the studio image and the animation videos with AI.</td><td>Our server holds photos in memory only while the job runs and never writes them to disk. Temporary files made while checking the generated clips are deleted as soon as each check ends; in every case nothing from your job stays on our server longer than 7 days after your cat is created or the job fails. Providers: see "Providers" below.</td></tr>
-    <tr><td>Cat's name</td><td>Our server only: progress messages and the "your cat is ready" notification.</td><td>Job record, deleted within 24 hours.</td></tr>
-    <tr><td>Details you choose to enter: eye colour, age, size, coat length, breed, weight (all optional)</td><td>Our server and Anthropic, to compare them with the photos; Higgsfield receives them as part of the text description of your cat's appearance.</td><td>Job record, deleted within 24 hours.</td></tr>
-    <tr><td>Push token (only if you allow notifications)</td><td>Our server, to send one "your cat is ready" (or "something went wrong") notification through Apple Push Notification service.</td><td>Job record, deleted within 24 hours; removed earlier if Apple reports it invalid.</td></tr>
+    <tr><td>1–4 photos of your cat</td><td><strong>Our server</strong> runs the job. <strong>Anthropic</strong> (Claude, USA) checks that the photos show one cat, describes its appearance (coat colour, pattern, markings, eye colour) and checks that the generated image looks like your cat. <strong>Higgsfield</strong> (USA) generates the studio image and the animation videos with AI.</td><td>Our server holds photos in memory only while the job runs and never writes them to disk. Temporary files made while checking the generated clips are deleted as soon as each check ends; in every case nothing from your job stays on our server longer than 30 days after your cat is ready, or 7 days after the job fails. Providers: see "Providers" below.</td></tr>
+    <tr><td>Cat's name</td><td>Our server only: progress messages and the "your cat is ready" notification.</td><td>Deleted with the job record (see section 7).</td></tr>
+    <tr><td>Details you choose to enter: eye colour, age, size, coat length, breed, weight (all optional)</td><td>Our server and Anthropic, to compare them with the photos; Higgsfield receives them as part of the text description of your cat's appearance.</td><td>Deleted with the job record (see section 7).</td></tr>
+    <tr><td>Push token (only if you allow notifications)</td><td>Our server, to send one "your cat is ready" (or "something went wrong") notification through Apple Push Notification service.</td><td>Deleted with the job record (see section 7); removed earlier if Apple reports it invalid.</td></tr>
     <tr><td>Apple-signed transaction information</td><td>Our server, to verify your one-time purchase ("Bring Your Cat to Life", "Extra Cat" or "My Cat Grew Up") and to enforce the limit per purchase. See section 4.</td><td>Only a one-way hash of the original transaction ID and a counter are kept. They are deleted automatically 12 months after their last use.</td></tr>
-    <tr><td>Generated images and videos</td><td>Created at Higgsfield and downloaded to your iPhone, where the background is removed and they are stored.</td><td>Links in our job record: within 24 hours. Copies at Higgsfield: under its terms.</td></tr>
+    <tr><td>Generated images and videos</td><td>Created at Higgsfield and downloaded to your iPhone, where the background is removed and they are stored.</td><td>If your iPhone has not picked up your cat within 24 hours, our server in Germany keeps a copy of the generated images and videos so the download can still finish. The links and any such copy are deleted with the job record (see section 7). Copies at Higgsfield: under its terms.</td></tr>
     <tr><td>Connection data (IP address, time, request)</td><td>The server that hosts our service, for security and operation.</td><td>Our server is hosted by netcup GmbH in Nuremberg, Germany (EU). Server logs are kept for 30 days, then deleted automatically.</td></tr>
   </table>
   <p><strong>Photos kept on your iPhone:</strong> the photos you pick for your living cat are kept only on your iPhone until all of your cat's moves have been installed on it, and are then deleted from your iPhone. "Delete all my data" deletes them at any time.</p>
@@ -73,7 +73,7 @@
   <h2>7. Deleting your data</h2>
   <ul>
     <li><strong>On your iPhone:</strong> Settings → Data → "Delete all my data" removes cat profiles, health records, memories, reminders, translation history, generated cats, any photos kept until your cat's moves are installed, and your upload consent. Deleting the app also removes everything on the device.</li>
-    <li><strong>On our server:</strong> the job record is deleted automatically within 24 hours. With no account we hold nothing that identifies you; if you want it deleted sooner, email us with the approximate time of the upload.</li>
+    <li><strong>On our server:</strong> the job record, together with any copy of your generated images and videos, is deleted automatically within 7 days after the app on your iPhone confirms it has received your cat; those days let the remaining moves still download and let us hand over a lost download again. If that confirmation never arrives, it is deleted 30 days after your cat is ready. A job that produces no cat is deleted within 24 hours of its start (at most 7 days if it is held for review). With no account we hold nothing that identifies you; if you want it deleted sooner, email us with the approximate time of the upload.</li>
   </ul>
 
   <h2>8. Legal bases (EEA, UK and Switzerland)</h2>
@@ -98,12 +98,12 @@
   <ul>
     <li>Business operator: Batuhan Eren Engin; contact for disclosure, correction, suspension of use or complaints: <a href="mailto:erengn@gmail.com">erengn@gmail.com</a>.</li>
     <li>Provision to third parties in a foreign country: photos and related data are provided to Anthropic and Higgsfield in the United States with your consent on the in-app consent screen. The United States has no comprehensive federal privacy law equivalent to the APPI; some states have their own laws (for example California's CCPA). Anthropic processes it only to provide its service to us; Higgsfield processes it under its own terms and privacy policy (see "Providers" in section 3).</li>
-    <li>Security measures: encrypted transport (HTTPS), photos held in memory only, job records deleted within 24 hours, access to the server limited to the developer. The server is located in Germany (netcup GmbH, Nuremberg).</li>
+    <li>Security measures: encrypted transport (HTTPS), photos held in memory only, job records deleted automatically (at the latest 30 days after your cat is ready; see section 7), access to the server limited to the developer. The server is located in Germany (netcup GmbH, Nuremberg).</li>
   </ul>
 
   <h2>12. Republic of Korea (Personal Information Protection Act)</h2>
   <ul>
-    <li>Items, purposes and retention: as in sections 3–5. Data is destroyed when the purpose is achieved: job records are deleted automatically within 24 hours; on-device data is erased with "Delete all my data" or by deleting the app.</li>
+    <li>Items, purposes and retention: as in sections 3–5. Data is destroyed when the purpose is achieved: job records are deleted automatically as described in section 7 (at the latest 30 days after your cat is ready); on-device data is erased with "Delete all my data" or by deleting the app.</li>
     <li>Overseas transfer: to Anthropic (USA) and Higgsfield (USA), over the network (HTTPS) at the time you request your living cat; items: photos, optional cat details; purpose: creating your cat; retention: see "Providers". You can refuse by not agreeing on the consent screen; then the living cat cannot be created, but the rest of the app works.</li>
     <li>Privacy officer: Batuhan Eren Engin, <a href="mailto:erengn@gmail.com">erengn@gmail.com</a>. You can also contact the Personal Information Infringement Report Center (privacy.kisa.or.kr, 118) or the Personal Information Dispute Mediation Committee (kopico.go.kr, 1833-6972).</li>
   </ul>
