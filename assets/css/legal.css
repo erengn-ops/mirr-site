@@ -1,0 +1,28 @@
+/* Privacy / terms / support pages: same words as before, in the Catbeam identity. Loads after site.css (fonts, colours). */
+body { background: var(--paper); }
+main.legal { max-width: 780px; margin: 0 auto; padding: 22px var(--gutter) 80px; font-size: 17px; line-height: 1.65; }
+main.legal header.site { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 18px; padding: 6px 0 22px; border-bottom: 1px solid var(--hair); margin-bottom: 22px; }
+main.legal .brand { display: inline-flex; align-items: center; gap: 9px; text-decoration: none; font: 800 19px/1 var(--sans); color: var(--ink); letter-spacing: -.01em; }
+main.legal .brand img { width: 30px; height: 30px; border-radius: 8px; box-shadow: 0 2px 8px rgba(17,19,41,.25); }
+main.legal header.site nav { display: flex; flex-wrap: wrap; gap: 4px 18px; }
+main.legal header.site nav a { margin: 0; padding: 8px 0; color: var(--ink-soft); text-decoration: none; font-weight: 700; font-size: 15px; border-bottom: 2px solid transparent; }
+main.legal header.site nav a[aria-current] { color: var(--ink); border-color: var(--brand); }
+main.legal header.site nav a:hover { color: var(--brand-ink); }
+main.legal nav.lang { display: flex; flex-wrap: wrap; gap: 6px 14px; margin: 0 0 26px; font-size: 14px; position: static; }
+main.legal nav.lang a { text-decoration: none; color: var(--ink-soft); padding: 7px 12px; border-radius: 999px; background: #fff; box-shadow: 0 0 0 1px var(--hair) inset; font-weight: 600; }
+main.legal nav.lang a[aria-current] { background: var(--ink); color: var(--paper); box-shadow: none; }
+main.legal h1 { font: 400 clamp(2.4rem, 8vw, 3.6rem)/1.05 var(--serif); letter-spacing: -.02em; margin: 6px 0 10px; text-wrap: balance; }
+main.legal h2 { font: 400 clamp(1.6rem, 5vw, 2rem)/1.15 var(--serif); letter-spacing: -.01em; margin: 40px 0 8px; }
+main.legal h3 { font: 800 16px/1.3 var(--sans); margin: 24px 0 4px; }
+:lang(ja) main.legal h1, :lang(ko) main.legal h1, :lang(zh-Hant) main.legal h1 { letter-spacing: 0; }
+main.legal p.meta { color: var(--ink-faint); font-size: 14px; margin: 0 0 8px; }
+main.legal a { color: var(--brand-ink); text-underline-offset: 3px; }
+main.legal .card { display: block; position: static; overflow: visible; background: #fff; border-radius: 22px; padding: 20px 22px; margin: 20px 0; box-shadow: 0 0 0 1px var(--hair), 0 18px 34px -26px rgba(58,42,32,.5); }
+main.legal ul { padding-left: 22px; } main.legal li { margin: 4px 0; }
+main.legal table { width: 100%; border-collapse: collapse; font-size: 15px; display: block; overflow-x: auto; }
+main.legal th, main.legal td { text-align: left; vertical-align: top; padding: 10px 10px; border-bottom: 1px solid var(--hair); }
+main.legal th { font-weight: 800; color: var(--ink-soft); font-size: 13px; letter-spacing: .03em; }
+main.legal mark { background: #ffe9a8; color: var(--ink); border-radius: 4px; padding: 0 4px; }
+main.legal footer { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--hair); color: var(--ink-soft); font-size: 14px; }
+main.legal footer a { text-decoration: none; } main.legal footer a:hover { text-decoration: underline; }
+main.legal p, main.legal li { overflow-wrap: anywhere; }
