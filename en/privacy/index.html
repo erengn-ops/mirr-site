@@ -4,7 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Catbeam Privacy Policy</title>
-<meta name="theme-color" content="#fff6ea">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#fff6ea" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1a1512" media="(prefers-color-scheme: dark)">
 <meta name="description" content="Catbeam privacy policy, including GDPR/UK GDPR, Japan APPI and Korea PIPA notes.">
 <link rel="canonical" href="https://erengn-ops.github.io/mirr-site/en/privacy/">
 <link rel="alternate" hreflang="tr" href="https://erengn-ops.github.io/mirr-site/gizlilik/">
@@ -17,8 +19,8 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/mirr-site/favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/mirr-site/favicon-16.png">
 <link rel="apple-touch-icon" href="/mirr-site/apple-touch-icon.png">
-<link rel="stylesheet" href="/mirr-site/assets/css/site.css?v=1">
-<link rel="stylesheet" href="/mirr-site/assets/css/legal.css?v=1">
+<link rel="stylesheet" href="/mirr-site/assets/css/site.css?v=2">
+<link rel="stylesheet" href="/mirr-site/assets/css/legal.css?v=2">
 </head>
 <body>
 <main class="legal">
@@ -28,7 +30,7 @@
   </header>
   <nav class="lang" aria-label="Language"><a href="/mirr-site/gizlilik/" hreflang="tr" lang="tr">Türkçe</a> <a href="/mirr-site/en/privacy/" hreflang="en" lang="en" aria-current="true">English</a> <a href="/mirr-site/ja/privacy/" hreflang="ja" lang="ja">日本語</a> <a href="/mirr-site/ko/privacy/" hreflang="ko" lang="ko">한국어</a> <a href="/mirr-site/zh-hant/privacy/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></nav>
   <h1>Privacy Policy</h1>
-  <p class="meta">Effective and last updated: <strong>6 November 2026</strong> (Catbeam 1.2.0) · This English version applies in every country except Türkiye, where the <a href="/mirr-site/gizlilik/">Turkish version</a> applies. Translations into Japanese, Korean and Chinese are provided for convenience.</p>
+  <p class="meta">Effective and last updated: <strong>11 November 2026</strong> (Catbeam 1.2.2) · This English version applies in every country except Türkiye, where the <a href="/mirr-site/gizlilik/">Turkish version</a> applies. Translations into Japanese, Korean and Chinese are provided for convenience.</p>
 
   <div class="card">
     <strong>In short:</strong> no account, no tracking. Your cat records, health journal and any audio you save stay on your iPhone (and, if you switch on iCloud sync, in your own iCloud, which we cannot access).
@@ -74,6 +76,8 @@ only when a living cat is created and you allow notifications, a <strong>push to
   </table>
   <p><strong>Photos kept on your iPhone:</strong> the photos you pick for your living cat are kept only on your iPhone until all of your cat's moves have been installed on it, and are then deleted from your iPhone. "Delete all my data" deletes them at any time.</p>
   <p><strong>Providers:</strong> <strong>Anthropic</strong> (Anthropic, PBC, USA; model Claude Haiku) receives the photos and details only to check and describe your cat. Under its <a href="https://www.anthropic.com/legal/commercial-terms">Commercial Terms of Service</a>, Anthropic may not train models on customer content from its services; it may keep data for a limited period for safety and abuse monitoring, as described in its <a href="https://www.anthropic.com/legal/privacy">Privacy Policy</a>. <strong>Higgsfield</strong> (Higgsfield Inc., USA) generates your cat's picture in its room, the empty and asleep states of the room, and the videos with partner models (for example Qwen-Image by Alibaba for pictures, and Wan by Alibaba, Kling by Kuaishou and H3 by MiniMax for videos; the models used may change over time). We only communicate with Higgsfield; Higgsfield runs these models under its own terms and decides in which countries the data is processed (countries other than the USA are possible). Higgsfield processes the photos, the description and the generated media under its own terms and retention rules: its <a href="https://higgsfield.ai/privacy-policy">Privacy Policy</a> says it may use inputs and outputs to train and improve its AI models, and that removed content may stay on its active servers for 30 days and in backups after that. We do not sell your data; we use it only to provide the service described here.</p>
+  <p><strong>Automatic check for people in photos.</strong> The photo check by Anthropic described above also looks for people. If a person (for example a face, even a small one or in the background) is visible in a photo, that photo is not used and the app asks you to choose a photo with only your cat. The check is automatic: it does not recognise or name anyone, and it is not perfect, so please choose photos with only your cat. No extra data is sent for it.</p>
+  <p><strong>Free first look (optional, no purchase needed).</strong> Before buying, you can choose 1&ndash;4 photos for a single preview picture of your cat in its room and confirm on the app's consent screen. The photos, the name and any details you enter go to the same three recipients as above (the Catbeam server manages the job; Anthropic checks that the photo shows one cat and describes its appearance; Higgsfield generates one picture) and are used only for that. The photos are not stored on our server or written to disk. The resulting picture and appearance description are kept on our server (Germany) for at most <strong>7 days</strong> so that, if you buy, your living cat can be built on them; if you do not choose to bring your cat to life in that time, or you use &ldquo;Delete all my data&rdquo; in the app, they are deleted; if you do, they are handed to that job and deleted with it. To prevent abuse there is one free look per device: the app sends a random code specific to your phone (not an advertising ID; used only for this rule), which our server keeps only as a salted hash, and the network address only as a hashed daily counter (up to 180 days for the device record); the raw values are not kept. Nothing is purchased by the free look.</p>
   <p><strong>Please do not include people, faces, documents or other personal information in the photos.</strong> The app only asks for photos of your cat.</p>
   <p>If you do not agree, nothing is uploaded and no living cat is created; you can keep using the rest of the app and the ready-made cats. You can withdraw consent in Settings → Privacy → "Withdraw consent"; this stops future uploads.</p>
 
@@ -103,9 +107,8 @@ only when a living cat is created and you allow notifications, a <strong>push to
   <p><strong>Catbeam Club</strong> is an auto-renewing subscription handled entirely by Apple (price, trial, renewal, cancellation and refunds). Apple's signed subscription record (see section 3) is sent to our server so that we can check that your membership is valid and limit generation per membership year. If Apple refunds or ends your subscription, our server makes no new Club clips for it; clips and cats already on your iPhone stay.</p>
 
   <h2>5. When you contact us</h2>
-  <p>Support is a message conversation inside the app (Settings → Support → "Contact us"). You can write text and attach one optional photo (for example a screenshot) to each message. With a message the app also sends its version, your iOS version and your language, and, if you came from a particular screen (such as a failed clip or a report), a short reference code for that screen. Your phone makes a random secret key for the conversation and keeps it in its own Keychain; our server stores only a one-way hash of that key, not the key itself, and no name, account, Apple Account or device identifier. If you allow notifications, your push token is kept with the conversation so that we can tell you when we reply. Messages and photos are kept for 365 days and then deleted automatically; you can delete the conversation yourself from the chat menu, and "Delete all my data" deletes it too. Only we can read it.</p>
+  <p>Support is a message conversation inside the app (Settings → Support → Message us). You can write text and attach one optional photo (for example a screenshot) to each message. With a message the app also sends its version, your iOS version and your language, and, if you came from a particular screen (such as a failed clip or a report), a short reference code for that screen. Your phone makes a random secret key for the conversation and keeps it in its own Keychain; our server stores only a one-way hash of that key, not the key itself, and no name, account, Apple Account or device identifier. If you allow notifications, your push token is kept with the conversation so that we can tell you when we reply. Messages and photos are kept for 365 days and then deleted automatically; you can delete the conversation yourself from the chat menu, and "Delete all my data" deletes it too. Only we can read it.</p>
   <p>If you email us instead (for example to exercise your data rights), we receive your email address and whatever you write. We use it only to answer you and keep it only as long as needed for that.</p>
-  <p><strong>Reporting a problem with a clip.</strong> The videos in Catbeam are made with AI, so you can report a problem with a clip from the special-day clip screen, the Club clip player and the finished screen of "Make a video", and, for your cat's room clips and pack, from Settings → Support, using the "Report a problem" button. A report contains only: the kind of item and its id (the id of the pack, room clip, special-day clip, Club moment or reel; never a photo or your cat's name), the reason you pick from a fixed list (inappropriate or upsetting; not my cat; looks broken or glitchy; something else), the optional note you write (up to 500 characters), and the app version and language. No name, account, device identifier or photo is sent. If your phone is offline, the report is saved on the phone and sent by itself when the connection returns. We review every report and, if needed, remove or redo the clip. Reports are kept for 180 days and then deleted automatically. Because a report is not linked to you, it cannot be looked up and removed one by one, and "Delete all my data" does not cover it; it is deleted automatically after 180 days. Your IP address is not saved in the report record: it is used only briefly in the server's memory to limit how many reports one connection can send per hour, and, as with every request, it appears in the connection logs described in section 3 (kept 30 days). You can also message us from the report screen; the report's id is then attached to your message as its reference code.</p>
 
   <h2>6. What we do not collect</h2>
   <p>We do not collect your name, phone number, location, contacts, advertising identifier or usage analytics; the app contains no third-party analytics or crash-reporting SDK, and you do not create an account. The app does not track you across other companies' apps or websites and does not sell personal information; it shares it with nobody except the service providers described above. We also do not receive the photos you take for the daily moment, your speech or your notes.</p>
@@ -117,7 +120,6 @@ only when a living cat is created and you allow notifications, a <strong>push to
     <li><strong>Special-day clips, the yearly pack and other records:</strong> a special-day clip job is deleted 3 days after the clip reaches your iPhone, 30 days after it is ready if it never does, and 24 hours after a failed attempt. A yearly pack's entitlement record is deleted 30 days after its valid-until date (or at once with "Delete all my data"). Purchase counters are deleted 12 months after last use and server logs after 30 days.</li>
     <li><strong>Catbeam Club:</strong> the membership record is deleted 30 days after the subscription's end date, or at once (except for the minimal record described in section 3, kept only until that date) with "Delete all my data". Clip jobs: see section 3 (14 days at the latest). Cancelling your subscription in your iPhone's settings does not delete anything on your iPhone.</li>
     <li><strong>Support messages:</strong> "Delete conversation" in the chat menu, or Settings → Data → "Delete all my data", removes the whole conversation and its photos from our server at once (if your phone is offline, the deletion is retried until the server confirms it). Otherwise messages and photos are deleted automatically after 365 days.</li>
-    <li><strong>Problem reports on clips:</strong> a report holds no name, account, device identifier or photo, so it cannot be tied to you and is not removed by "Delete all my data"; it is deleted automatically 180 days after it is received.</li>
   </ul>
 
   <h2>8. Legal bases (EEA, UK and Switzerland)</h2>
@@ -127,7 +129,6 @@ only when a living cat is created and you allow notifications, a <strong>push to
     <tr><td>Verifying purchases and subscriptions and limiting generation per purchase or membership</td><td>Performance of the contract and our legitimate interest in preventing abuse (Art. 6(1)(b) and (f)).</td></tr>
     <tr><td>Server security logs</td><td>Legitimate interest in running a secure service (Art. 6(1)(f)).</td></tr>
     <tr><td>Answering your support messages and emails</td><td>Legitimate interest in answering you, or steps you request before a contract (Art. 6(1)(f) and (b)).</td></tr>
-    <tr><td>Reviewing problem reports on AI-generated clips</td><td>Legitimate interest in keeping the service safe and in handling your report (Art. 6(1)(f)).</td></tr>
   </table>
   <p>We do not use automated decision-making that produces legal or similarly significant effects.</p>
 
@@ -162,7 +163,7 @@ only when a living cat is created and you allow notifications, a <strong>push to
   <h2>15. Changes</h2>
   <p>If this policy changes, the current version is published on this page with its date. If the kinds of data that leave your iPhone change, we will also tell you in the app before any new upload.</p>
 
-  <footer><a href="/mirr-site/en/">Catbeam</a> · <a href="/mirr-site/en/privacy/">Privacy Policy</a> · <a href="/mirr-site/en/terms/">Terms of Use</a> · <a href="/mirr-site/en/support/">Support</a><br><a href="mailto:erengn@gmail.com">erengn@gmail.com</a></footer>
+  <footer><a href="/mirr-site/en/">Catbeam</a> · <a href="/mirr-site/en/privacy/">Privacy Policy</a> · <a href="/mirr-site/en/terms/">Terms of Use</a> · <a href="/mirr-site/en/support/">Support</a></footer>
 </main>
 </body>
 </html>

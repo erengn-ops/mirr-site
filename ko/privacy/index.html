@@ -4,7 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Catbeam 개인정보 처리방침</title>
-<meta name="theme-color" content="#fff6ea">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#fff6ea" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1a1512" media="(prefers-color-scheme: dark)">
 <meta name="description" content="Catbeam 개인정보 처리방침. 개인정보 보호법 관련 사항 포함.">
 <link rel="canonical" href="https://erengn-ops.github.io/mirr-site/ko/privacy/">
 <link rel="alternate" hreflang="tr" href="https://erengn-ops.github.io/mirr-site/gizlilik/">
@@ -17,8 +19,8 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/mirr-site/favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/mirr-site/favicon-16.png">
 <link rel="apple-touch-icon" href="/mirr-site/apple-touch-icon.png">
-<link rel="stylesheet" href="/mirr-site/assets/css/site.css?v=1">
-<link rel="stylesheet" href="/mirr-site/assets/css/legal.css?v=1">
+<link rel="stylesheet" href="/mirr-site/assets/css/site.css?v=2">
+<link rel="stylesheet" href="/mirr-site/assets/css/legal.css?v=2">
 </head>
 <body>
 <main class="legal">
@@ -28,7 +30,7 @@
   </header>
   <nav class="lang" aria-label="언어"><a href="/mirr-site/gizlilik/" hreflang="tr" lang="tr">Türkçe</a> <a href="/mirr-site/en/privacy/" hreflang="en" lang="en">English</a> <a href="/mirr-site/ja/privacy/" hreflang="ja" lang="ja">日本語</a> <a href="/mirr-site/ko/privacy/" hreflang="ko" lang="ko" aria-current="true">한국어</a> <a href="/mirr-site/zh-hant/privacy/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></nav>
   <h1>개인정보 처리방침</h1>
-  <p class="meta">시행일·최종 업데이트: <strong>2026년 11월 6일</strong> (Catbeam 1.2.0) · 이 페이지는 <a href="/mirr-site/en/privacy/">영어판</a>의 번역입니다. 내용이 다를 경우 영어판이 우선합니다.</p>
+  <p class="meta">시행일·최종 업데이트: <strong>2026년 11월 11일</strong> (Catbeam 1.2.2) · 이 페이지는 <a href="/mirr-site/en/privacy/">영어판</a>의 번역입니다. 내용이 다를 경우 영어판이 우선합니다.</p>
 
   <div class="card">
     <strong>요약:</strong> 회원가입과 추적이 없습니다. 고양이 기록, 건강수첩, 저장한 음성은 iPhone 안에 저장됩니다(iCloud 동기화를 켜면 당사가 접근할 수 없는 본인의 iCloud에도 저장됩니다).
@@ -68,12 +70,14 @@
     <tr><td>고양이 이름</td><td>당사 서버만: 진행 상황 메시지와 "준비됐어요" 알림.</td><td>작업 기록과 함께 삭제(7항).</td></tr>
     <tr><td>선택 입력 정보: 눈 색, 나이, 체격, 털 길이, 품종, 체중</td><td>당사 서버와 Anthropic이 사진과 비교하는 데 사용합니다. Higgsfield에는 외모 설명문의 일부로 전달됩니다.</td><td>작업 기록과 함께 삭제(7항).</td></tr>
     <tr><td>푸시 알림 토큰(알림을 허용한 경우만)</td><td>당사 서버가 Apple 푸시 알림 서비스를 통해 "준비됐어요"(또는 "문제가 생겼어요") 알림을 한 번 보내는 데 사용합니다.</td><td>작업 기록과 함께 삭제(7항). Apple이 무효라고 알리면 그 전에 삭제. 특별한 날 영상과 연간 패키지에는 토큰이 전송되지 않습니다.</td></tr>
-    <tr><td>Apple 서명 거래 정보</td><td>당사 서버가 1회성 구매("우리 냥이 살아 움직이기", "냥이 한 마리 더", "우리 냥이가 다 컸어요", "특별한 날 영상", "1년 특별한 날 영상")가 유효한지 확인하고 구매당 생성 한도를 적용하는 데 사용합니다(4항). 구매한 App Store 국가(Apple 서명 기록의 국가 코드)도 읽으며, 어떤 모델 조합으로 만들지 고르는 데 쓰일 수 있습니다. 서명된 기록에는 앱이 구매에 붙이는 무작위 익명 계정 코드(iCloud 키체인에 보관되며 이름이나 Apple 계정과 무관)도 들어 있지만, 당사 서버는 이를 저장하지 않습니다.</td><td>원 거래 ID의 단방향 해시와 카운터만 보관합니다. 마지막 사용 후 12개월이 지나면 자동으로 삭제됩니다. (연간 패키지 기록은 아래 참고.)</td></tr>
+    <tr><td>Apple 서명 거래 정보</td><td>당사 서버가 1회성 구매("우리 냥이 움직이게 하기", "냥이 한 마리 더", "우리 냥이가 다 컸어요", "특별한 날 영상", "1년 특별한 날 영상")가 유효한지 확인하고 구매당 생성 한도를 적용하는 데 사용합니다(4항). 구매한 App Store 국가(Apple 서명 기록의 국가 코드)도 읽으며, 어떤 모델 조합으로 만들지 고르는 데 쓰일 수 있습니다. 서명된 기록에는 앱이 구매에 붙이는 무작위 익명 계정 코드(iCloud 키체인에 보관되며 이름이나 Apple 계정과 무관)도 들어 있지만, 당사 서버는 이를 저장하지 않습니다.</td><td>원 거래 ID의 단방향 해시와 카운터만 보관합니다. 마지막 사용 후 12개월이 지나면 자동으로 삭제됩니다. (연간 패키지 기록은 아래 참고.)</td></tr>
     <tr><td>생성된 이미지와 동영상</td><td>Higgsfield에서 생성되며, 당사 서버가 이를 전체 화면 "방" 영상과 방 이미지(방, 빈 방, 잠든 냥이)로 구성된 패키지로 만듭니다. 패키지는 당사 서버에서 iPhone으로 다운로드되어 iPhone에 저장되며, 영상은 배경을 오려 내지 않은 전체 화면 그대로 저장됩니다.</td><td>패키지 파일은 냥이가 완성되는 즉시 당사 서버(독일)에 놓이고 그곳에서 다운로드됩니다. 작업마다 고유한, 추측할 수 없는 링크로만 받을 수 있습니다. 링크와 이 파일은 작업 기록과 함께 삭제됩니다(7항). Higgsfield의 사본은 해당 업체 약관에 따릅니다.</td></tr>
     <tr><td>접속 기록(IP 주소, 시간, 요청)</td><td>서비스를 호스팅하는 서버가 보안과 운영을 위해 기록합니다.</td><td>당사 서버는 독일(EU) 뉘른베르크의 netcup GmbH가 호스팅합니다. 서버 로그는 30일간 보관한 뒤 자동으로 삭제합니다.</td></tr>
   </table>
   <p><strong>iPhone에 보관되는 사진:</strong> 살아 움직이는 냥이를 위해 선택한 사진은 냥이의 모든 동작이 iPhone에 설치될 때까지 iPhone에만 보관되며, 그 후 iPhone에서 삭제됩니다. "내 데이터 모두 삭제"로 언제든 삭제할 수 있습니다.</p>
   <p><strong>수탁자:</strong> <strong>Anthropic</strong>(Anthropic, PBC, 미국, 모델 Claude Haiku)은 냥이를 확인하고 외모를 묘사하는 목적으로만 사진과 정보를 받습니다. <a href="https://www.anthropic.com/legal/commercial-terms">상업 서비스 약관</a>에 따라 Anthropic은 고객 콘텐츠로 모델을 학습시킬 수 없으며, <a href="https://www.anthropic.com/legal/privacy">개인정보 처리방침</a>에 따라 안전 및 악용 감시를 위해 제한된 기간 동안 보관할 수 있습니다. <strong>Higgsfield</strong>(Higgsfield Inc., 미국)는 협력사 모델(예: 이미지는 Alibaba의 Qwen-Image, 동영상은 Alibaba의 Wan, Kuaishou의 Kling, MiniMax의 H3이며 사용 모델은 바뀔 수 있습니다)로 방 안의 냥이 이미지, 비어 있는 방과 냥이가 잠든 모습, 동영상을 생성합니다. 당사는 Higgsfield와만 통신하며, Higgsfield가 자체 약관에 따라 이 모델들을 운영하고 데이터를 처리하는 국가를 정합니다(미국 외 국가일 수 있습니다). Higgsfield는 사진·설명문·생성물을 자체 약관과 보관 규칙에 따라 처리합니다. Higgsfield의 <a href="https://higgsfield.ai/privacy-policy">개인정보 처리방침</a>에는 입력과 출력을 AI 모델 학습·개선에 사용할 수 있으며, 삭제된 콘텐츠가 30일간 운영 서버에, 그 이후에는 백업에 남을 수 있다고 적혀 있습니다. 당사는 데이터를 판매하지 않으며, 여기에 설명한 서비스를 제공하는 데에만 사용합니다.</p>
+  <p><strong>사진 속 사람 자동 확인.</strong> 위에서 설명한 Anthropic의 사진 확인은 사진에 사람이 보이는지도 살펴봅니다. 사진에 사람(예: 얼굴, 작거나 배경에 있어도)이 보이면 그 사진은 사용되지 않으며, 앱이 고양이만 나온 사진을 골라 달라고 안내합니다. 이 확인은 자동이며 누구도 식별하거나 이름을 붙이지 않고 완벽하지도 않으므로, 고양이만 나온 사진을 선택해 주세요. 이를 위해 추가로 전송되는 데이터는 없습니다.</p>
+  <p><strong>무료 첫 미리보기(선택 사항, 구매 불필요).</strong> 구매하기 전에 사진 1~4장을 골라 방 안에 있는 고양이의 미리보기 이미지 한 장을 만들 수 있으며, 앱의 동의 화면에서 확인해야 합니다. 사진, 이름, 입력한 정보는 위와 같은 세 수신자에게 전송되고(Catbeam 서버가 작업을 관리하고, Anthropic이 사진에 고양이가 한 마리인지 확인하고 외모를 설명하며, Higgsfield가 이미지 한 장을 생성합니다) 이 목적으로만 사용됩니다. 사진은 서버에 저장되지 않으며 디스크에도 기록되지 않습니다. 생성된 이미지와 외모 설명은 구매하시면 그 위에 살아 있는 고양이를 만들 수 있도록 서버(독일)에 <strong>최대 7일</strong> 보관됩니다. 그 기간에 고양이를 살아 움직이게 하기로 선택하지 않거나 앱의 &ldquo;내 모든 데이터 삭제&rdquo;를 사용하면 삭제되고, 선택하면 해당 작업으로 넘겨져 작업과 함께 삭제됩니다. 악용을 막기 위해 기기당 무료 첫 미리보기는 한 번입니다. 앱은 휴대폰 고유의 무작위 코드를 전송하고(광고 ID가 아니며 이 규칙에만 사용), 서버는 이를 솔트가 적용된 해시로만, 네트워크 주소는 일일 카운터용 해시로만 보관합니다(기기 기록은 최대 180일). 원본 값은 보관하지 않습니다. 무료 미리보기로는 아무것도 구매되지 않습니다.</p>
   <p><strong>사진에 사람, 얼굴, 서류 또는 기타 개인정보가 담기지 않도록 해 주세요.</strong> 앱은 고양이 사진만 요청합니다.</p>
   <p>동의하지 않으면 아무것도 전송되지 않으며 살아 움직이는 냥이는 만들어지지 않습니다. 앱의 다른 기능과 준비된 고양이는 그대로 이용할 수 있습니다. 동의는 설정 → 개인정보 → "동의 철회"에서 철회할 수 있으며, 이후의 전송은 중단됩니다.</p>
 
@@ -105,7 +109,6 @@
   <h2>5. 문의하실 때</h2>
   <p>고객 지원은 앱 안에서 주고받는 메시지입니다(설정 → 지원 → "문의하기"). 글을 쓰고, 메시지마다 사진(예: 스크린샷) 한 장을 선택적으로 첨부할 수 있습니다. 메시지와 함께 앱 버전, iOS 버전, 언어 설정, 그리고 특정 화면(만들기에 실패한 영상, 신고 등)에서 오셨다면 그 화면을 가리키는 짧은 참조 코드가 전송됩니다. iPhone이 대화마다 무작위 비밀 키를 만들어 자체 키체인에 보관하며, 저희 서버는 이 키 자체가 아니라 단방향 해시만 저장합니다. 이름, 계정, Apple 계정, 기기 식별자는 저장하지 않습니다. 알림을 허용하셨다면 답변을 알려 드리기 위해 푸시 토큰이 대화와 함께 보관됩니다. 메시지와 사진은 365일 동안 보관된 뒤 자동으로 삭제되며, 채팅 메뉴에서 직접 삭제할 수도 있고 "내 데이터 모두 삭제"로도 삭제됩니다. 대화는 저희만 읽을 수 있습니다.</p>
   <p>대신 이메일을 보내시면(예: 개인정보 관련 권리를 행사하실 때) 이메일 주소와 내용을 받게 됩니다. 답변에만 사용하며 그에 필요한 기간 동안만 보관합니다.</p>
-  <p><strong>영상 문제 신고.</strong> Catbeam의 영상은 AI로 만들어지므로, "문제 신고" 버튼으로 특별한 날 영상 화면, Club 영상 플레이어, "영상 만들기" 완료 화면, 그리고 (냥이의 방 영상과 패키지는) 설정 → 지원에서 영상의 문제를 신고할 수 있습니다. 신고와 함께 전송되는 것은 다음뿐입니다. 콘텐츠의 종류와 ID(패키지, 방 영상, 특별한 날 영상, Club 모먼트 또는 릴의 ID이며 사진이나 냥이 이름은 절대 포함되지 않습니다), 정해진 목록에서 고른 사유(부적절하거나 불쾌해요, 우리 고양이가 아니에요, 깨졌거나 이상해 보여요, 다른 문제), 선택적으로 적은 메모(최대 500자), 앱 버전과 언어입니다. 이름, 계정, 기기 식별자, 사진은 전송되지 않습니다. iPhone이 오프라인이면 신고가 iPhone에 저장되었다가 연결이 돌아오면 저절로 전송됩니다. 모든 신고를 검토하고, 필요하면 영상을 삭제하거나 다시 만듭니다. 신고는 180일 동안 보관된 뒤 자동으로 삭제됩니다. 신고는 회원님과 연결되어 있지 않으므로 하나씩 찾아 삭제할 수 없고 "내 데이터 모두 삭제"의 대상도 아니며, 180일 후 자동으로 삭제됩니다. IP 주소는 신고 기록에 저장되지 않습니다. 하나의 연결이 한 시간에 보낼 수 있는 신고 수를 제한하기 위해 서버 메모리에서 잠깐만 사용되며, 모든 요청과 마찬가지로 3항에 설명된 접속 기록(30일 보관)에 남습니다. 신고 화면에서 저희에게 메시지를 보낼 수도 있으며, 이 경우 신고 ID가 참조 코드로 메시지에 첨부됩니다.</p>
 
   <h2>6. 수집하지 않는 정보</h2>
   <p>이용자의 이름, 전화번호, 위치, 연락처, 광고 식별자, 이용 분석 정보는 수집하지 않으며, 앱에는 제3자 분석 SDK나 충돌 보고 SDK가 없고 회원 계정도 만들지 않습니다. 앱은 다른 회사의 앱이나 웹사이트에 걸쳐 사용자를 추적하지 않으며 개인정보를 판매하지 않고, 위에서 설명한 수탁자 외에는 누구와도 공유하지 않습니다. 오늘의 순간을 위해 찍은 사진, 음성, 메모도 받지 않습니다.</p>
@@ -117,7 +120,6 @@
     <li><strong>특별한 날 영상, 연간 패키지, 기타 기록:</strong> 특별한 날 영상 작업은 영상이 iPhone에 도착한 뒤 3일, 도착하지 않으면 완성 후 30일, 실패하면 24시간 뒤에 삭제됩니다. 연간 패키지의 권한 기록은 유효 기한 30일 뒤(또는 "내 데이터 모두 삭제"로 즉시) 삭제됩니다. 구매 카운터는 마지막 사용 후 12개월, 서버 로그는 30일 뒤에 삭제됩니다.</li>
     <li><strong>Catbeam Club:</strong> 회원 기록은 구독 종료일로부터 30일 뒤, 또는 '내 데이터 모두 삭제'로 즉시 삭제됩니다(3항의 최소 기록만 그 날까지 보관). 영상 작업은 3항(최대 14일)을 보세요. iPhone 설정에서 구독을 해지해도 iPhone에 있는 것은 아무것도 삭제되지 않습니다.</li>
     <li><strong>지원 대화:</strong> 채팅 메뉴의 "대화 삭제" 또는 설정 → 데이터 → "내 데이터 모두 삭제"를 하면 대화 전체와 사진이 저희 서버에서 즉시 삭제됩니다(iPhone이 오프라인이면 서버가 확인할 때까지 삭제를 다시 시도합니다). 그렇지 않으면 메시지와 사진은 365일 후 자동으로 삭제됩니다.</li>
-    <li><strong>영상 문제 신고:</strong> 신고에는 이름, 계정, 기기 식별자, 사진이 포함되지 않아 회원님과 연결할 수 없으므로 "내 데이터 모두 삭제"로 삭제되지 않습니다. 신고는 접수 180일 후 자동으로 삭제됩니다.</li>
   </ul>
 
   <h2>8. 대한민국 개인정보 보호법 관련 사항</h2>
@@ -146,7 +148,7 @@
   <h2>11. 변경</h2>
   <p>이 방침이 변경되면 최신 내용을 날짜와 함께 이 페이지에 게시합니다. iPhone 밖으로 전송되는 데이터의 종류가 바뀌면 새로운 전송 전에 앱에서도 알려 드립니다.</p>
 
-  <footer><a href="/mirr-site/ko/">Catbeam</a> · <a href="/mirr-site/ko/privacy/">개인정보 처리방침</a> · <a href="/mirr-site/ko/terms/">이용약관</a> · <a href="/mirr-site/ko/support/">고객 지원</a><br><a href="mailto:erengn@gmail.com">erengn@gmail.com</a></footer>
+  <footer><a href="/mirr-site/ko/">Catbeam</a> · <a href="/mirr-site/ko/privacy/">개인정보 처리방침</a> · <a href="/mirr-site/ko/terms/">이용약관</a> · <a href="/mirr-site/ko/support/">고객 지원</a></footer>
 </main>
 </body>
 </html>

@@ -4,7 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Catbeam プライバシーポリシー</title>
-<meta name="theme-color" content="#fff6ea">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#fff6ea" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1a1512" media="(prefers-color-scheme: dark)">
 <meta name="description" content="Catbeamのプライバシーポリシー。個人情報保護法に関する事項を含みます。">
 <link rel="canonical" href="https://erengn-ops.github.io/mirr-site/ja/privacy/">
 <link rel="alternate" hreflang="tr" href="https://erengn-ops.github.io/mirr-site/gizlilik/">
@@ -17,8 +19,8 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/mirr-site/favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/mirr-site/favicon-16.png">
 <link rel="apple-touch-icon" href="/mirr-site/apple-touch-icon.png">
-<link rel="stylesheet" href="/mirr-site/assets/css/site.css?v=1">
-<link rel="stylesheet" href="/mirr-site/assets/css/legal.css?v=1">
+<link rel="stylesheet" href="/mirr-site/assets/css/site.css?v=2">
+<link rel="stylesheet" href="/mirr-site/assets/css/legal.css?v=2">
 </head>
 <body>
 <main class="legal">
@@ -28,7 +30,7 @@
   </header>
   <nav class="lang" aria-label="言語"><a href="/mirr-site/gizlilik/" hreflang="tr" lang="tr">Türkçe</a> <a href="/mirr-site/en/privacy/" hreflang="en" lang="en">English</a> <a href="/mirr-site/ja/privacy/" hreflang="ja" lang="ja" aria-current="true">日本語</a> <a href="/mirr-site/ko/privacy/" hreflang="ko" lang="ko">한국어</a> <a href="/mirr-site/zh-hant/privacy/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></nav>
   <h1>プライバシーポリシー</h1>
-  <p class="meta">施行日・最終更新日：<strong>2026年11月6日</strong>（Catbeam 1.2.0） · 本ページは<a href="/mirr-site/en/privacy/">英語版</a>の翻訳です。内容に相違がある場合は英語版が優先します。</p>
+  <p class="meta">施行日・最終更新日：<strong>2026年11月11日</strong>（Catbeam 1.2.2） · 本ページは<a href="/mirr-site/en/privacy/">英語版</a>の翻訳です。内容に相違がある場合は英語版が優先します。</p>
 
   <div class="card">
     <strong>概要：</strong>アカウント登録なし、トラッキングなし。猫の記録、健康手帳、保存した音声はiPhoneの中に保存されます（iCloud同期をオンにした場合は、当方がアクセスできないあなた自身のiCloudにも保存されます）。
@@ -74,6 +76,8 @@
   </table>
   <p><strong>iPhoneに保存される写真：</strong>動くうちの子のためにえらんだ写真は、うちの子のすべての動きがiPhoneに入るまでiPhoneの中だけに保存され、その後iPhoneから削除されます。「すべてのデータを削除」でいつでも削除できます。</p>
   <p><strong>委託先：</strong><strong>Anthropic</strong>（Anthropic, PBC、米国。モデルはClaude Haiku）は、うちの子の確認と外見の記述のためにのみ写真と情報を受け取ります。同社の<a href="https://www.anthropic.com/legal/commercial-terms">商用利用規約</a>により、Anthropicは顧客コンテンツをモデルの学習に使用できません。<a href="https://www.anthropic.com/legal/privacy">プライバシーポリシー</a>に記載のとおり、安全性と不正利用の監視のため限られた期間保存することがあります。<strong>Higgsfield</strong>（Higgsfield Inc.、米国）は提携先のモデル（たとえば画像はAlibabaのQwen-Image、動画はAlibabaのWan、KuaishouのKling、MiniMaxのH3。使用するモデルは変わることがあります）で、お部屋の中のうちの子の画像、お部屋が空の状態と猫が眠っている状態、そして動画を生成します。当方が通信するのはHiggsfieldだけで、Higgsfieldが同社の規約に従ってこれらのモデルを動かし、データをどの国で処理するかを決めます（米国以外の国の場合もあります）。Higgsfieldは、写真・説明文・生成物を同社の規約と保存ルールに従って処理します。同社の<a href="https://higgsfield.ai/privacy-policy">プライバシーポリシー</a>には、入力と出力をAIモデルの学習・改善に使用する場合があること、削除されたコンテンツが30日間稼働中のサーバーに、その後もバックアップに残る場合があることが記載されています。当方はデータを販売せず、ここに記載したサービスの提供のためにのみ使用します。</p>
+  <p><strong>写真に人が写っていないかの自動チェック。</strong>上で説明したAnthropicによる写真の確認では、人が写っていないかも調べます。写真に人（顔など。小さくても、背景でも）が写っている場合、その写真は使われず、アプリは猫だけが写った写真を選ぶようお願いします。このチェックは自動で、誰かを識別したり名前を付けたりすることはなく、完全でもありません。猫だけが写った写真をお選びください。このために追加のデータは送られません。</p>
+  <p><strong>無料のファーストルック（任意・購入不要）。</strong>購入前に、1〜4枚の写真を選んで、お部屋にいる猫のプレビュー画像を1枚作ることができます（アプリの同意画面での確認が必要です）。写真、名前、入力した情報は上記と同じ3つの送信先に送られ（Catbeamサーバーが処理を管理し、Anthropicが写真に猫が1匹だけ写っているかを確認して外見を説明し、Higgsfieldが画像を1枚生成します）、この目的にのみ使われます。写真は当社のサーバーに保存されず、ディスクにも書き込まれません。生成された画像と外見の説明は、購入された場合にその上で猫を作れるよう、当社のサーバー（ドイツ）に<strong>最長7日間</strong>保持されます。この間に猫に命を吹き込むことを選ばなかった場合、またはアプリの「すべてのデータを削除」を使った場合は削除されます。選んだ場合は、その処理に引き継がれ、処理とともに削除されます。不正利用を防ぐため、無料のファーストルックは1台につき1回です。アプリはお使いの端末固有のランダムなコードを送信し（広告IDではなく、この規則のためだけに使用）、当社サーバーはこれをソルト付きハッシュとして、ネットワークアドレスは日次カウンタ用のハッシュとしてのみ保持します（端末記録は最長180日）。元の値は保持しません。無料のファーストルックでは何も購入されません。</p>
   <p><strong>写真に人物、顔、書類、その他の個人情報が写らないようにしてください。</strong>アプリが求めるのは猫の写真だけです。</p>
   <p>同意しない場合は何も送信されず、動くうちの子はつくられません。アプリのほかの機能と、用意されている猫はそのまま使えます。同意は設定 → プライバシー →「同意を取り消す」から撤回でき、以後の送信は行われません。</p>
 
@@ -105,7 +109,6 @@
   <h2>5. お問い合わせいただいた場合</h2>
   <p>サポートはアプリ内のメッセージのやり取りです（設定 → サポート →「お問い合わせ」）。テキストを書き、メッセージごとに写真（スクリーンショットなど）を1枚添えることもできます。メッセージと一緒に、アプリのバージョン、iOSのバージョン、言語設定、そして特定の画面（作成に失敗したムービーや報告など）から来た場合はその画面を示す短い参照コードが送られます。お使いのiPhoneがやり取りごとにランダムな秘密の鍵を作り、自分のキーチェーンに保管します。当方のサーバーが保存するのはその鍵そのものではなく、一方向ハッシュだけです。名前、アカウント、Apple アカウント、端末識別子は保存しません。通知を許可している場合は、返信をお知らせするために、プッシュ通知トークンをやり取りと一緒に保管します。メッセージと写真は365日間保存され、その後自動的に削除されます。やり取りはチャットのメニューからご自身で削除でき、「すべてのデータを削除」でも削除されます。読めるのは当方だけです。</p>
   <p>代わりにメールをいただいた場合（たとえば法令上のデータ主体の権利を行使される場合）は、メールアドレスと内容を受け取ります。返信のためにのみ使用し、そのために必要な期間だけ保存します。</p>
-  <p><strong>ムービーに関する問題の報告。</strong>Catbeamのムービーは AI で作られているため、「問題を報告」ボタンから、特別な日のムービーの画面、Clubのムービーのプレーヤー、「動画をつくる」の完成画面、そして（うちの子のお部屋のムービーとパックについては）設定 → サポートで、ムービーの問題を報告できます。報告で送られるのは次のものだけです：対象の種類とそのID（パック、お部屋のムービー、特別な日のムービー、Clubのムービー、リールのID。写真やうちの子の名前は含まれません）、決まった一覧から選んだ理由（不適切、または不快な内容／うちの子ではない／映像が壊れている、または不自然／その他の問題）、任意で書いたメモ（500文字まで）、アプリのバージョンと言語。名前、アカウント、端末識別子、写真は送られません。iPhoneがオフラインの場合、報告はiPhoneに保存され、接続が戻ると自動的に送信されます。報告はすべて確認し、必要に応じてムービーを削除または作り直します。報告は180日間保存され、その後自動的に削除されます。報告はあなたと結び付いていないため、1件ずつ探して削除することはできず、「すべてのデータを削除」の対象にもなりません。180日後に自動的に削除されます。IPアドレスは報告の記録には保存されません。1つの接続が1時間に送れる報告の数を制限するためにサーバーのメモリ上で短時間だけ使われ、すべてのリクエストと同様に、第3項に記載の接続ログ（30日間保存）に残ります。報告画面からメッセージを送ることもでき、その場合は報告のIDが参照コードとして添付されます。</p>
 
   <h2>6. 収集しないもの</h2>
   <p>氏名、電話番号、位置情報、連絡先、広告識別子、利用状況の分析は収集しません。アプリにはサードパーティ製の分析SDKやクラッシュレポートSDKは含まれず、アカウントも作成しません。アプリはほかの会社のアプリやWebサイトをまたいであなたをトラッキングせず、個人情報を販売せず、上記の委託先以外と共有することもありません。毎日のひとこま用に撮った写真、音声、メモは受け取りません。</p>
@@ -117,7 +120,6 @@
     <li><strong>特別な日のムービー、年間パック、その他の記録：</strong>特別な日のムービーの処理記録は、ムービーがiPhoneに届いてから3日後、届かない場合は完成の30日後、失敗した場合は24時間後に削除されます。年間パックの権利の記録は、有効期限の30日後（または「すべてのデータを削除」で直ちに）削除されます。購入カウンターは最後の利用から12か月後、サーバーのログは30日後に削除されます。</li>
     <li><strong>Catbeam Club：</strong>会員の記録は、サブスクリプションの終了日から30日後、または「すべてのデータを削除」によりただちに削除されます（セクション3の最小限の記録のみ、その日まで保持）。ムービーのジョブについてはセクション3（最長14日）をご覧ください。iPhoneの設定でサブスクリプションを解約しても、iPhone上のものは何も削除されません。</li>
     <li><strong>サポートのやり取り：</strong>チャットのメニューの「やり取りを削除」、または設定 → データ →「すべてのデータを削除」で、やり取り全体と写真が当方のサーバーからただちに削除されます（iPhoneがオフラインの場合は、サーバーが確認するまで削除を再試行します）。それ以外の場合、メッセージと写真は365日後に自動的に削除されます。</li>
-    <li><strong>ムービーの問題報告：</strong>報告には名前、アカウント、端末識別子、写真が含まれないため、あなたと結び付けることができず、「すべてのデータを削除」では削除されません。報告は受信から180日後に自動的に削除されます。</li>
   </ul>
 
   <h2>8. 日本の個人情報保護法に関する事項</h2>
@@ -137,7 +139,7 @@
   <h2>11. 変更について</h2>
   <p>本ポリシーを変更した場合は、日付とともに本ページに掲載します。iPhoneの外に送られるデータの種類が変わる場合は、新たな送信の前にアプリ内でもお知らせします。</p>
 
-  <footer><a href="/mirr-site/ja/">Catbeam</a> · <a href="/mirr-site/ja/privacy/">プライバシーポリシー</a> · <a href="/mirr-site/ja/terms/">利用規約</a> · <a href="/mirr-site/ja/support/">サポート</a><br><a href="mailto:erengn@gmail.com">erengn@gmail.com</a></footer>
+  <footer><a href="/mirr-site/ja/">Catbeam</a> · <a href="/mirr-site/ja/privacy/">プライバシーポリシー</a> · <a href="/mirr-site/ja/terms/">利用規約</a> · <a href="/mirr-site/ja/support/">サポート</a></footer>
 </main>
 </body>
 </html>
