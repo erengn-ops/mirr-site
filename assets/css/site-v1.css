@@ -291,3 +291,16 @@ section { position: relative; }
 @media (max-width: 359px) { .logo { font-size: 17px; gap: 7px; } .logo img { width: 26px; height: 26px; } .btn.sm { padding: 0 11px; } .lang summary { padding: 0 8px; } }
 :lang(ja) .hero-copy .h1, :lang(ko) .hero-copy .h1, :lang(zh-Hant) .hero-copy .h1 { max-width: none; }
 :lang(ja) .h1 { font-size: clamp(2.1rem, 8.4vw, 5rem); }
+
+/* SSS --------------------------------------------------------------------------------------------------------------- */
+.faq { padding: clamp(40px, 8vw, 90px) 0 clamp(70px, 11vw, 130px); background: var(--paper); }
+.faq-head { display: grid; gap: 16px; justify-items: start; margin-bottom: clamp(26px, 5vw, 48px); }
+.faq-list { display: grid; gap: 12px; max-width: 880px; }
+.faq details { border-radius: 22px; background: var(--paper-2); box-shadow: 0 0 0 1px var(--hair) inset; }
+.faq summary { cursor: pointer; list-style: none; position: relative; padding: 20px 58px 20px 24px; font: 700 18px/1.4 var(--sans); }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; position: absolute; right: 24px; top: 50%; transform: translateY(-50%); font: 400 26px/1 var(--sans); color: var(--brand-ink); }
+.faq details[open] summary::after { content: "\2212"; }
+.faq .a { padding: 0 24px 22px; color: var(--ink-soft); overflow-wrap: anywhere; }
+.faq .a a { color: var(--brand-ink); }
+@media (max-width: 480px) { .faq summary { padding: 18px 50px 18px 18px; font-size: 16.5px; } .faq summary::after { right: 18px; } .faq .a { padding: 0 18px 18px; font-size: 16px; } }

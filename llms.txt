@@ -1,0 +1,26 @@
+# Catbeam
+
+> Catbeam is an iPhone app (iOS 18 or later) that brings your own cat to life from a few of your photos: your cat lives in a room of its own in the app, reacts when you tap, and sleeps at night. It also has a playful cat translator, a free health journal (vaccines, medication, weight, reminders, vaccine card), a travel passport and games.
+
+- App Store: https://apps.apple.com/app/id6819641536
+- Platform: iPhone only, iOS 18.0 or later. No Android version.
+- Price: free to download. Bringing your own cat to life is a one-time purchase that does not renew. Catbeam Club is an optional yearly auto-renewing subscription. The cat translator, health journal, travel passport and games are free.
+- Cat translator: for fun. It is a playful guess based on the pitch, length and loudness of the sound; the sound is analysed only on the iPhone and is never sent anywhere. It does not measure what a cat is really saying.
+- Photos: used only to create the living cat. Analysis and generation are done by Anthropic and Higgsfield (and Higgsfield's partner models) in the USA; the server keeps photos in memory during the job and does not write them to disk.
+- Smart care guide: general information only; it does not diagnose and does not replace a vet.
+- Languages of the site: English, Turkish, Japanese, Korean, Traditional Chinese.
+
+## Pages
+
+- [English home and FAQ](https://erengn-ops.github.io/mirr-site/en/)
+- [Türkçe](https://erengn-ops.github.io/mirr-site/)
+- [日本語](https://erengn-ops.github.io/mirr-site/ja/)
+- [한국어](https://erengn-ops.github.io/mirr-site/ko/)
+- [繁體中文](https://erengn-ops.github.io/mirr-site/zh-hant/)
+- [Support and full FAQ](https://erengn-ops.github.io/mirr-site/en/support/)
+- [Privacy Policy](https://erengn-ops.github.io/mirr-site/en/privacy/)
+- [Terms of Use](https://erengn-ops.github.io/mirr-site/en/terms/)
+
+## Contact
+
+- erengn@gmail.com
