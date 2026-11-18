@@ -17,6 +17,35 @@
   var P = {}, cards = [], cur = 0, tgt = 0, last = 0, raf = 0, active = false, vidOn = false;
   var V0 = 0.16, V1 = 0.74, REV = 0.80;
 
+  /* After the wake-up she stays alive: every clip starts and ends on the same seated pose, so they chain without a
+     seam. Two stacked videos take turns; the next one is shown only once it is actually playing (no blank frame). */
+  var life = (function () {
+    var BASE = wakeVid.getAttribute('src').replace(/[^/]*$/, '');
+    var ORDER = ['idle', 'greet', 'idle', 'meow', 'idle', 'curious', 'yawn', 'idle', 'stretch', 'idle', 'love'];
+    var vids = [0, 1].map(function () {
+      var v = d.createElement('video'); v.className = 'rev'; v.muted = true; v.playsInline = true; v.preload = 'auto';
+      v.setAttribute('muted', ''); v.setAttribute('playsinline', ''); v.setAttribute('aria-hidden', 'true');
+      wakeVid.parentNode.insertBefore(v, wakeVid.nextSibling); return v;
+    });
+    var on = false, i = 0, front = null, gen = 0;
+    function src(n) { return BASE + ORDER[n % ORDER.length] + '.mp4'; }
+    function show(v, prev) { v.classList.add('on'); if (prev) prev.classList.remove('on'); else wakeVid.classList.remove('on'); }
+    function next() {
+      if (!on) return;
+      var g = gen, v = front === vids[0] ? vids[1] : vids[0], prev = front;
+      v.onended = null; v.src = src(i++); v.currentTime = 0;
+      v.onplaying = function () { v.onplaying = null; if (g === gen && on) { show(v, prev); front = v; if (prev) prev.pause(); } };
+      v.onended = function () { if (g === gen) next(); };
+      var pr = v.play(); if (pr && pr.catch) pr.catch(function () {});
+    }
+    wakeVid.addEventListener('ended', function () { if (vidOn && active) { on = true; next(); } });
+    return {
+      stop: function () { gen++; on = false; front = null; i = 0; vids.forEach(function (v) { v.pause(); v.onended = v.onplaying = null; v.classList.remove('on'); }); },
+      pause: function () { if (front) front.pause(); },
+      resume: function () { if (on && front) { var pr = front.play(); if (pr && pr.catch) pr.catch(function () {}); } else return false; return true; }
+    };
+  })();
+
   function sm(a, b, x) { x = Math.min(1, Math.max(0, (x - a) / (b - a))); return x * x * (3 - 2 * x); }
   function clamp(x) { return Math.min(1, Math.max(0, x)); }
   function rng(seed) { return function () { seed |= 0; seed = seed + 0x6D2B79F5 | 0; var t = Math.imul(seed ^ seed >>> 15, 1 | seed); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
@@ -106,8 +135,8 @@
     wakeImg.style.opacity = sm(V1 - .02, REV, p).toFixed(3);
     // the clip
     var want = p >= REV;
-    if (want && !vidOn) { vidOn = true; wakeVid.currentTime = 0; var pr = wakeVid.play(); if (pr && pr.catch) pr.catch(function () {}); wakeVid.classList.add('on'); }
-    else if (!want && vidOn) { vidOn = false; wakeVid.pause(); wakeVid.classList.remove('on'); }
+    if (want && !vidOn) { vidOn = true; life.stop(); wakeVid.currentTime = 0; var pr = wakeVid.play(); if (pr && pr.catch) pr.catch(function () {}); wakeVid.classList.add('on'); }
+    else if (!want && vidOn) { vidOn = false; life.stop(); wakeVid.pause(); wakeVid.classList.remove('on'); }
     // cards
     if (cardA > 0.001 && appear > 0) {
       for (var k = 0; k < 4; k++) {
@@ -166,9 +195,9 @@
   if ('IntersectionObserver' in window) {
     new IntersectionObserver(function (es) {
       es.forEach(function (e) {
-        if (e.isIntersecting && !loaded) { loaded = true; init(); }
-        active = e.isIntersecting; if (active) { onScroll(); kick(); } else if (vidOn) { wakeVid.pause(); }
-        if (active && vidOn && cur >= REV) wakeVid.play().catch(function () {});
+        if (e.isIntersecting && !loaded) { loaded = true; wakeVid.preload = 'auto'; wakeVid.load(); init(); }
+        active = e.isIntersecting; if (active) { onScroll(); kick(); } else if (vidOn) { wakeVid.pause(); life.pause(); }
+        if (active && vidOn && cur >= REV && !life.resume()) wakeVid.play().catch(function () {});
       });
     }, { rootMargin: '600px 0px' }).observe(root);
   } else { loaded = true; active = true; init(); }
