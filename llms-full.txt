@@ -1,0 +1,96 @@
+# Catbeam (full)
+
+> Catbeam is an iPhone app (iOS 18 or later) by Batuhan Eren Engin. It brings your own cat to life from a few of your photos (AI-generated; results may not look exactly like your cat), and has a free health journal, a playful cat translator, a pet passport and games for cats. No account is needed.
+
+## Facts
+
+- App Store: https://apps.apple.com/app/id6819641536 (iPhone only; no Android version).
+- Price: free to download. Free: cat translator, health journal (vaccine card with days until the next dose, medication reminders, weight chart and body condition score, vet visits, parasite treatments), vaccine card PDF and QR code, health report PDF, pet passport with microchip number (not an official document), games, CSV/JSON export, smart care guide (5 questions a day; 30 once your cat is brought to life).
+- Paid: Bring Your Cat to Life is a one-time purchase (one cat; does not renew). Extra Cat, My Cat Grew Up and Special Day Clip are one-time purchases. Catbeam Club is an optional yearly auto-renewing subscription (a new clip every month, every special day, a few more daily moments); the price is shown in the app before subscribing.
+- Cat translator: for fun. Apple's on-device sound recognition first checks that a cat is audible (speech and silence are not translated); then the pitch, length and loudness of the sound are mapped to one of seven playful moods (greeting, wants attention, might be hungry, relaxed and happy, curious, complaining, uneasy). It does not measure what a cat really means; the sound never leaves the iPhone.
+- Smart care guide: general information about everyday care and behaviour; it does not diagnose and does not replace a vet.
+- Privacy: health records and memories stay on the iPhone (and the user's own private iCloud if sync is on). Cat photos are sent, only with consent, to the developer's server (Germany) and to Anthropic and Higgsfield (USA) to create the living cat; the server keeps photos in memory only during the job.
+- Site languages: English, Turkish, Japanese, Korean, Traditional Chinese. App languages: English, Turkish, Japanese, Korean, Traditional Chinese.
+
+## Guides
+
+### Cat translator (en) — https://erengn-ops.github.io/mirr-site/en/cat-translator/
+
+Catbeam's cat translator is for fun . It checks that it really hears a cat, then turns the pitch, length and loudness of the meow into one of seven playful moods. It does not measure what your cat actually means, and no app can turn a meow into words.
+- How it works: Open Listen and hold your iPhone near your cat while it meows, or load a recording. Apple's built-in sound recognition, running on your iPhone, checks that a cat is audible (meow, purr or other cat sounds). Speech or silence is not translated: no cat, no translation. The app measures the pitch, length and loudness of the sound and shows one of seven moods: greeting , wants attention , might be hungry , relaxed and happy , curious , complaining or uneasy .
+- What it can't do: Cats meow mostly at people, and each cat's meows differ. The moods above are a rule of thumb for fun, not a diagnosis and not a scientific reading. If your cat suddenly meows much more, hides or stops eating, ask a vet.
+- Privacy: The sound is analysed only on your iPhone and is never sent anywhere. Catbeam needs no account.
+- What else is in Catbeam: A free health journal: vaccine card with days until the next dose, medication reminders, weight chart, vet visits and parasite treatments. A pet passport with the microchip number (not an official document) and games for cats. Optional: bring your own cat to life from a few photos. It is made with AI, so it may not look exactly like your cat; it is a one-time purchase. Catbeam Club is an optional yearly subscription.
+- Q: Is a cat translator real? A: No app can translate a meow into words. Catbeam's translator is for fun: it confirms a cat is audible and maps the sound's pitch, length and loudness to a playful mood.
+- Q: Is the cat translator free? A: Yes. Downloading Catbeam is free, and the translator, the health journal and the games are free.
+- Q: Is my cat's sound uploaded? A: No. The sound is analysed only on your iPhone and is never sent anywhere.
+- Q: Is there an Android version? A: No. Catbeam is made for iPhone and needs iOS 18 or later.
+
+### 猫語翻訳 (ja) — https://erengn-ops.github.io/mirr-site/ja/neko-honyaku/
+
+Catbeamの猫語翻訳は 遊びのための機能 です。本当に猫の声かを確かめたうえで、鳴き声の高さ・長さ・大きさから7つの気持ちのどれかを表示します。猫が実際に何を言っているかを測るものではなく、鳴き声を言葉に訳せるアプリはありません。
+- しくみ: 「聞く」を開き、猫が鳴いているときにiPhoneを近づけます。録音を読み込むこともできます。 iPhoneに内蔵されたAppleの音声認識が、端末の中で猫の声（ニャー、ゴロゴロなど）が聞こえるかを確かめます。人の声や無音は翻訳しません。猫がいなければ、翻訳もありません。 声の高さ・長さ・大きさを測り、 あいさつ 、 かまってほしい 、 おなかすいたかも 、 ごきげん 、 興味しんしん 、 ご不満 、 落ち着かない の7つから1つを表示します。
+- できないこと: 猫はおもに人に向かって鳴き、鳴き方は猫ごとに違います。上の気持ちは遊びのための目安で、診断でも科学的な解読でもありません。急によく鳴くようになった、隠れる、食べないといったときは、動物病院に相談してください。
+- プライバシー: 音声はiPhoneの中だけで分析され、どこにも送られません。アカウント登録も不要です。
+- Catbeamでできるほかのこと: 無料の健康手帳：次の接種までの日数がわかるワクチン手帳、お薬のリマインダー、体重グラフ、通院・寄生虫予防の記録（ 猫の健康手帳について ）。 マイクロチップ番号を載せたパスポート（公的な書類ではありません）と猫用ゲーム。 任意：数枚の写真からうちの子を動かせます。AIでつくるため、本物とまったく同じには見えないことがあります。買い切りの購入です。Catbeam Clubは任意の年額サブスクリプションです。
+- Q: 猫語翻訳は本当に訳せるの？ A: 鳴き声を言葉に訳せるアプリはありません。Catbeamの猫語翻訳は遊びのための機能で、猫の声かを確かめたうえで、高さ・長さ・大きさから気持ちを推測します。
+- Q: 無料で使えますか？ A: はい。ダウンロードは無料で、猫語翻訳、健康手帳、ゲームは無料です。
+- Q: 鳴き声はアップロードされますか？ A: いいえ。音声はiPhoneの中だけで分析され、どこにも送られません。
+- Q: Android版はありますか？ A: ありません。iPhone向けのアプリで、iOS 18以降が必要です。
+
+### 고양이 번역기 (ko) — https://erengn-ops.github.io/mirr-site/ko/goyangi-beonyeokgi/
+
+Catbeam 고양이 번역기는 재미를 위한 기능 이에요. 정말 고양이 소리인지 먼저 확인한 뒤, 울음소리의 높이·길이·크기로 7가지 기분 중 하나를 보여 줘요. 고양이가 실제로 무슨 말을 하는지 측정하는 건 아니고, 울음소리를 말로 옮기는 앱은 없어요.
+- 어떻게 작동하나요: '듣기'를 열고 냥이가 울 때 iPhone을 가까이 대요. 녹음 파일을 불러올 수도 있어요. iPhone에 내장된 Apple 소리 인식이 기기 안에서 고양이 소리(야옹, 골골송 등)가 들리는지 확인해요. 사람 목소리나 조용한 소리는 번역하지 않아요. 고양이가 없으면 번역도 없어요. 소리의 높이·길이·크기를 재서 인사해요 , 관심이 필요해요 , 배고픈 것 같아요 , 편안하고 행복해요 , 궁금해요 , 불만이에요 , 불안해요 중 하나를 보여 줘요.
+- 할 수 없는 것: 고양이는 주로 사람에게 울고, 우는 방식은 냥이마다 달라요. 위의 기분은 재미를 위한 기준일 뿐 진단도, 과학적 해석도 아니에요. 갑자기 많이 울거나 숨거나 밥을 먹지 않으면 동물병원에 문의하세요.
+- 개인정보: 소리는 iPhone 안에서만 분석되고 어디에도 전송되지 않아요. 계정도 필요 없어요.
+- Catbeam의 다른 기능: 무료 건강수첩: 다음 접종까지 남은 날을 알려 주는 예방접종 수첩, 투약 알림, 체중 그래프, 병원·구충 기록 ( 고양이 건강수첩 안내 ). 마이크로칩 번호가 담긴 여권(공식 서류는 아니에요)과 고양이 게임. 선택: 사진 몇 장으로 우리 냥이를 움직이게 할 수 있어요. AI로 만들기 때문에 실제와 똑같지 않을 수 있어요. 1회성 구매예요. Catbeam Club은 선택형 연간 구독이에요.
+- Q: 고양이 번역기는 진짜 번역하나요? A: 울음소리를 말로 옮기는 앱은 없어요. Catbeam 고양이 번역기는 재미를 위한 기능으로, 고양이 소리인지 확인한 뒤 높이·길이·크기로 기분을 추측해요.
+- Q: 무료인가요? A: 네. 다운로드는 무료이고, 고양이 번역기, 건강수첩, 게임은 무료예요.
+- Q: 울음소리가 업로드되나요? A: 아니요. 소리는 iPhone 안에서만 분석되고 어디에도 전송되지 않아요.
+- Q: Android 버전이 있나요? A: 없어요. iPhone용 앱이며 iOS 18 이상이 필요해요.
+
+### 貓咪翻譯 (zh-Hant) — https://erengn-ops.github.io/mirr-site/zh-hant/maomi-fanyi/
+
+Catbeam 的貓咪翻譯 純屬娛樂 。它會先確認真的聽到貓咪，再依叫聲的音高、長度與音量，顯示 7 種心情之一。它不會測量貓咪真正的意思，也沒有任何 App 能把喵叫翻成人話。
+- 運作方式: 打開「聆聽」，在貓咪喵叫時把 iPhone 靠近牠，也可以載入錄音。 iPhone 內建的 Apple 聲音辨識會在裝置上確認是否聽得到貓咪的聲音（喵叫、呼嚕等）。人聲或安靜不會被翻譯：沒有貓，就沒有翻譯。 App 會測量聲音的音高、長度與音量，從 打招呼 、 想要關注 、 可能餓了 、 放鬆又開心 、 好奇 、 在抱怨 、 不安 中顯示一種。
+- 做不到的事: 貓咪多半是對人喵叫，而且每隻貓的叫法都不同。上面的心情只是好玩的參考，不是診斷，也不是科學解讀。如果貓咪突然叫得特別多、躲起來或不吃東西，請諮詢獸醫。
+- 隱私: 聲音只在你的 iPhone 上分析，不會傳送到任何地方。也不需要註冊帳號。
+- Catbeam 的其他功能: 免費健康手冊：顯示距離下一劑還有幾天的疫苗卡、用藥提醒、體重圖表、就診與驅蟲紀錄。 附晶片號碼的寵物護照（非官方文件）與貓咪遊戲。 選用：用幾張照片讓你家貓咪活起來。由 AI 製作，可能與本貓不完全相同；為單次購買。Catbeam Club 是選用的年度訂閱。
+- Q: 貓咪翻譯真的能翻譯嗎？ A: 沒有 App 能把喵叫翻成人話。Catbeam 的貓咪翻譯純屬娛樂：先確認聽到貓咪，再依音高、長度與音量猜測心情。
+- Q: 貓咪翻譯免費嗎？ A: 免費。下載 Catbeam 免費，貓咪翻譯、健康手冊與小遊戲都免費。
+- Q: 貓咪的叫聲會上傳嗎？ A: 不會。聲音只在你的 iPhone 上分析，不會傳送到任何地方。
+- Q: 有 Android 版嗎？ A: 沒有。Catbeam 為 iPhone 打造，需要 iOS 18 或以上版本。
+
+### 猫の健康手帳 (ja) — https://erengn-ops.github.io/mirr-site/ja/neko-techo/
+
+Catbeamの健康手帳は 無料 です。記録はiPhoneの中（iCloud同期をオンにすると、あなた専用のiCloudにも）に保存され、当方がそれを見ることはできません。
+- 記録できること: ワクチン手帳： 3種混合、猫白血病、狂犬病などを記録し、次の接種まであと何日かを表示。 お薬： 時間を決めてリマインダー、「あげた」の記録、飲み忘れ、投薬の最終日。 体重とボディコンディション： 体重グラフとBCS。 通院と寄生虫予防： 動物病院の記録、ノミ・ダニ・お腹の虫の予防。 パスポート： マイクロチップ番号がひと目でわかるIDカード（公的な書類ではありません）。
+- 獣医さんと共有: ワクチン手帳は無料のPDFやQRコードで見せられます。全記録の健康レポートPDFも無料です。データはCSV/JSONで書き出せます。
+- お世話ガイド: 「たずねる」は、日々のお世話や行動についての一般的な情報を伝えるガイドです（1日5問、うちの子を動かすと30問）。診断はせず、獣医さんの診察の代わりにはなりません。緊急のサインがあれば動物病院をすすめます。
+- ほかにも: 遊びのための 猫語翻訳 、ウィジェット、猫用ゲーム。任意で、数枚の写真からうちの子をスマホの中で動かすこともできます（AIでつくるため、本物とまったく同じには見えないことがあります。買い切り）。
+- Q: 無料で使えますか？ A: はい。健康手帳、ワクチン手帳のPDF、リマインダー、体重グラフは無料です。
+- Q: 記録はどこに保存されますか？ A: iPhoneの中と、iCloud同期をオンにした場合はあなた専用のiCloudです。当方は見られません。アカウント登録は不要です。
+- Q: 病気の相談はできますか？ A: お世話ガイドは一般的な情報だけを伝え、診断はしません。気になる症状があれば動物病院を受診してください。
+
+### 고양이 건강수첩 (ko) — https://erengn-ops.github.io/mirr-site/ko/geongang-sucheop/
+
+Catbeam 건강수첩은 무료 예요. 기록은 iPhone 안(iCloud 동기화를 켜면 나만의 iCloud에도)에 저장되고, 저희는 볼 수 없어요.
+- 기록할 수 있는 것: 예방접종 수첩: 종합백신, 광견병, 고양이 백혈병 등을 기록하고 다음 접종까지 남은 날을 보여 줘요. 투약: 시간 알림, '먹였어요' 기록, 놓친 투약, 마지막 투약일. 체중과 체형 점수: 체중 그래프와 BCS. 병원과 구충: 동물병원 기록, 벼룩·진드기·내부 기생충 예방. 여권: 마이크로칩 번호를 한눈에 보는 ID 카드(공식 서류는 아니에요).
+- 수의사와 공유: 예방접종 수첩은 무료 PDF나 QR 코드로 보여 줄 수 있어요. 전체 건강 리포트 PDF도 무료예요. 데이터는 CSV/JSON으로 내보낼 수 있어요.
+- 돌봄 가이드: '물어보기'는 일상 돌봄과 행동에 대한 일반 정보를 알려 주는 가이드예요(하루 5개 질문, 우리 냥이를 움직이게 하면 30개). 진단하지 않으며 수의사 진료를 대신하지 않아요. 응급 신호가 보이면 동물병원을 안내해요.
+- 그 밖에: 재미로 쓰는 고양이 번역기 , 위젯, 고양이 게임. 선택으로 사진 몇 장으로 우리 냥이를 폰 속에서 움직이게 할 수도 있어요(AI로 만들어 실제와 똑같지 않을 수 있어요. 1회성 구매).
+- Q: 무료인가요? A: 네. 건강수첩, 예방접종 수첩 PDF, 알림, 체중 그래프는 무료예요.
+- Q: 기록은 어디에 저장되나요? A: iPhone 안, 그리고 iCloud 동기화를 켜면 나만의 iCloud에 저장돼요. 저희는 볼 수 없고, 계정도 필요 없어요.
+- Q: 아픈 증상을 상담할 수 있나요? A: 돌봄 가이드는 일반 정보만 알려 주고 진단하지 않아요. 걱정되는 증상이 있으면 동물병원에 가 주세요.
+
+## Pages
+
+- Home (EN): https://erengn-ops.github.io/mirr-site/en/  ·  TR: https://erengn-ops.github.io/mirr-site/  ·  JA: https://erengn-ops.github.io/mirr-site/ja/  ·  KO: https://erengn-ops.github.io/mirr-site/ko/  ·  ZH-Hant: https://erengn-ops.github.io/mirr-site/zh-hant/
+- Support and full FAQ: https://erengn-ops.github.io/mirr-site/en/support/
+- Privacy Policy: https://erengn-ops.github.io/mirr-site/en/privacy/
+- Terms of Use: https://erengn-ops.github.io/mirr-site/en/terms/
+
+## Contact
+
+- erengn@gmail.com

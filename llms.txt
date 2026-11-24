@@ -21,6 +21,16 @@
 - [Privacy Policy](https://erengn-ops.github.io/mirr-site/en/privacy/)
 - [Terms of Use](https://erengn-ops.github.io/mirr-site/en/terms/)
 
+## Guides
+
+- [Cat translator (EN)](https://erengn-ops.github.io/mirr-site/en/cat-translator/)
+- [猫語翻訳 (JA)](https://erengn-ops.github.io/mirr-site/ja/neko-honyaku/)
+- [猫の健康手帳 (JA)](https://erengn-ops.github.io/mirr-site/ja/neko-techo/)
+- [고양이 번역기 (KO)](https://erengn-ops.github.io/mirr-site/ko/goyangi-beonyeokgi/)
+- [고양이 건강수첩 (KO)](https://erengn-ops.github.io/mirr-site/ko/geongang-sucheop/)
+- [貓咪翻譯 (ZH-Hant)](https://erengn-ops.github.io/mirr-site/zh-hant/maomi-fanyi/)
+- [Full text for language models](https://erengn-ops.github.io/mirr-site/llms-full.txt)
+
 ## Contact
 
 - erengn@gmail.com
